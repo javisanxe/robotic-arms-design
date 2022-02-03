@@ -1,0 +1,6110 @@
+Library {
+  Name			  "roblocks"
+  Version		  7.9
+  MdlSubVersion		  0
+  SavedCharacterEncoding  "ISO-8859-1"
+  LibraryType		  "BlockLibrary"
+  SaveDefaultBlockParams  on
+  ScopeRefreshTime	  0.035000
+  OverrideScopeRefreshTime on
+  DisableAllScopes	  off
+  FPTRunName		  "Run 1"
+  MaxMDLFileLineLength	  120
+  Created		  "Mon Feb 06 11:30:26 2012"
+  Creator		  "n6334687"
+  UpdateHistory		  "UpdateHistoryNever"
+  ModifiedByFormat	  "%<Auto>"
+  LastModifiedBy	  "corkep"
+  ModifiedDateFormat	  "%<Auto>"
+  LastModifiedDate	  "Thu Sep 13 21:09:39 2012"
+  RTWModifiedTimeStamp	  269471369
+  ModelVersionFormat	  "1.%<AutoIncrement:54>"
+  ConfigurationManager	  "None"
+  SampleTimeColors	  off
+  SampleTimeAnnotations	  off
+  LibraryLinkDisplay	  "none"
+  WideLines		  off
+  ShowLineDimensions	  off
+  ShowPortDataTypes	  off
+  ShowDesignRanges	  off
+  ShowLoopsOnError	  on
+  IgnoreBidirectionalLines off
+  ShowStorageClass	  off
+  ShowTestPointIcons	  on
+  ShowSignalResolutionIcons on
+  ShowViewerIcons	  on
+  SortedOrder		  off
+  ExecutionContextIcon	  off
+  ShowLinearizationAnnotations on
+  BlockNameDataTip	  off
+  BlockParametersDataTip  off
+  BlockDescriptionStringDataTip	off
+  ToolBar		  on
+  StatusBar		  on
+  BrowserShowLibraryLinks off
+  BrowserLookUnderMasks	  on
+  SimulationMode	  "normal"
+  LinearizationMsg	  "none"
+  Profile		  off
+  ParamWorkspaceSource	  "MATLABWorkspace"
+  RecordCoverage	  off
+  CovSaveName		  "covdata"
+  CovMetricSettings	  "dw"
+  CovNameIncrementing	  off
+  CovHtmlReporting	  on
+  CovForceBlockReductionOff on
+  covSaveCumulativeToWorkspaceVar on
+  CovSaveSingleToWorkspaceVar on
+  CovCumulativeReport	  off
+  CovReportOnPause	  on
+  CovModelRefEnable	  "Off"
+  CovExternalEMLEnable	  off
+  ExtModeBatchMode	  off
+  ExtModeEnableFloating	  on
+  ExtModeTrigType	  "manual"
+  ExtModeTrigMode	  "normal"
+  ExtModeTrigPort	  "1"
+  ExtModeTrigElement	  "any"
+  ExtModeTrigDuration	  1000
+  ExtModeTrigDurationFloating "auto"
+  ExtModeTrigHoldOff	  0
+  ExtModeTrigDelay	  0
+  ExtModeTrigDirection	  "rising"
+  ExtModeTrigLevel	  0
+  ExtModeArchiveMode	  "off"
+  ExtModeAutoIncOneShot	  off
+  ExtModeIncDirWhenArm	  off
+  ExtModeAddSuffixToVar	  off
+  ExtModeWriteAllDataToWs off
+  ExtModeArmWhenConnect	  on
+  ExtModeSkipDownloadWhenConnect off
+  ExtModeLogAll		  on
+  ExtModeAutoUpdateStatusClock on
+  ShowModelReferenceBlockVersion off
+  ShowModelReferenceBlockIO off
+  Array {
+    Type		    "Handle"
+    Dimension		    1
+    Simulink.ConfigSet {
+      $ObjectID		      1
+      Version		      "1.12.0"
+      Array {
+	Type			"Handle"
+	Dimension		8
+	Simulink.SolverCC {
+	  $ObjectID		  2
+	  Version		  "1.12.0"
+	  StartTime		  "0.0"
+	  StopTime		  "10.0"
+	  AbsTol		  "auto"
+	  FixedStep		  "auto"
+	  InitialStep		  "auto"
+	  MaxNumMinSteps	  "-1"
+	  MaxOrder		  5
+	  ZcThreshold		  "auto"
+	  ConsecutiveZCsStepRelTol "10*128*eps"
+	  MaxConsecutiveZCs	  "1000"
+	  ExtrapolationOrder	  4
+	  NumberNewtonIterations  1
+	  MaxStep		  "auto"
+	  MinStep		  "auto"
+	  MaxConsecutiveMinStep	  "1"
+	  RelTol		  "1e-3"
+	  SolverMode		  "Auto"
+	  EnableConcurrentExecution off
+	  ConcurrentTasks	  off
+	  Solver		  "ode45"
+	  SolverName		  "ode45"
+	  SolverJacobianMethodControl "auto"
+	  ShapePreserveControl	  "DisableAll"
+	  ZeroCrossControl	  "UseLocalSettings"
+	  ZeroCrossAlgorithm	  "Nonadaptive"
+	  AlgebraicLoopSolver	  "TrustRegion"
+	  SolverResetMethod	  "Fast"
+	  PositivePriorityOrder	  off
+	  AutoInsertRateTranBlk	  off
+	  SampleTimeConstraint	  "Unconstrained"
+	  InsertRTBMode		  "Whenever possible"
+	}
+	Simulink.DataIOCC {
+	  $ObjectID		  3
+	  Version		  "1.12.0"
+	  Decimation		  "1"
+	  ExternalInput		  "[t, u]"
+	  FinalStateName	  "xFinal"
+	  InitialState		  "xInitial"
+	  LimitDataPoints	  on
+	  MaxDataPoints		  "1000"
+	  LoadExternalInput	  off
+	  LoadInitialState	  off
+	  SaveFinalState	  off
+	  SaveCompleteFinalSimState off
+	  SaveFormat		  "Array"
+	  SignalLoggingSaveFormat "ModelDataLogs"
+	  SaveOutput		  on
+	  SaveState		  off
+	  SignalLogging		  on
+	  DSMLogging		  on
+	  InspectSignalLogs	  off
+	  SaveTime		  on
+	  ReturnWorkspaceOutputs  off
+	  StateSaveName		  "xout"
+	  TimeSaveName		  "tout"
+	  OutputSaveName	  "yout"
+	  SignalLoggingName	  "logsout"
+	  DSMLoggingName	  "dsmout"
+	  OutputOption		  "RefineOutputTimes"
+	  OutputTimes		  "[]"
+	  ReturnWorkspaceOutputsName "out"
+	  Refine		  "1"
+	}
+	Simulink.OptimizationCC {
+	  $ObjectID		  4
+	  Version		  "1.12.0"
+	  Array {
+	    Type		    "Cell"
+	    Dimension		    8
+	    Cell		    "BooleansAsBitfields"
+	    Cell		    "PassReuseOutputArgsAs"
+	    Cell		    "PassReuseOutputArgsThreshold"
+	    Cell		    "ZeroExternalMemoryAtStartup"
+	    Cell		    "ZeroInternalMemoryAtStartup"
+	    Cell		    "OptimizeModelRefInitCode"
+	    Cell		    "NoFixptDivByZeroProtection"
+	    Cell		    "UseSpecifiedMinMax"
+	    PropName		    "DisabledProps"
+	  }
+	  BlockReduction	  on
+	  BooleanDataType	  on
+	  ConditionallyExecuteInputs on
+	  InlineParams		  off
+	  UseIntDivNetSlope	  off
+	  UseFloatMulNetSlope	  off
+	  UseSpecifiedMinMax	  off
+	  InlineInvariantSignals  off
+	  OptimizeBlockIOStorage  on
+	  BufferReuse		  on
+	  EnhancedBackFolding	  off
+	  StrengthReduction	  off
+	  ExpressionFolding	  on
+	  BooleansAsBitfields	  off
+	  BitfieldContainerType	  "uint_T"
+	  EnableMemcpy		  on
+	  MemcpyThreshold	  64
+	  PassReuseOutputArgsAs	  "Structure reference"
+	  ExpressionDepthLimit	  2147483647
+	  FoldNonRolledExpr	  on
+	  LocalBlockOutputs	  on
+	  RollThreshold		  5
+	  SystemCodeInlineAuto	  off
+	  StateBitsets		  off
+	  DataBitsets		  off
+	  UseTempVars		  off
+	  ZeroExternalMemoryAtStartup on
+	  ZeroInternalMemoryAtStartup on
+	  InitFltsAndDblsToZero	  off
+	  NoFixptDivByZeroProtection off
+	  EfficientFloat2IntCast  off
+	  EfficientMapNaN2IntZero on
+	  OptimizeModelRefInitCode off
+	  LifeSpan		  "inf"
+	  MaxStackSize		  "Inherit from target"
+	  BufferReusableBoundary  on
+	  SimCompilerOptimization "Off"
+	  AccelVerboseBuild	  off
+	  ParallelExecutionInRapidAccelerator on
+	}
+	Simulink.DebuggingCC {
+	  $ObjectID		  5
+	  Version		  "1.12.0"
+	  RTPrefix		  "error"
+	  ConsistencyChecking	  "none"
+	  ArrayBoundsChecking	  "none"
+	  SignalInfNanChecking	  "none"
+	  SignalRangeChecking	  "none"
+	  ReadBeforeWriteMsg	  "UseLocalSettings"
+	  WriteAfterWriteMsg	  "UseLocalSettings"
+	  WriteAfterReadMsg	  "UseLocalSettings"
+	  AlgebraicLoopMsg	  "warning"
+	  ArtificialAlgebraicLoopMsg "warning"
+	  SaveWithDisabledLinksMsg "warning"
+	  SaveWithParameterizedLinksMsg	"warning"
+	  CheckSSInitialOutputMsg on
+	  UnderspecifiedInitializationDetection	"Classic"
+	  MergeDetectMultiDrivingBlocksExec "none"
+	  CheckExecutionContextPreStartOutputMsg off
+	  CheckExecutionContextRuntimeOutputMsg	off
+	  SignalResolutionControl "UseLocalSettings"
+	  BlockPriorityViolationMsg "warning"
+	  MinStepSizeMsg	  "warning"
+	  TimeAdjustmentMsg	  "none"
+	  MaxConsecutiveZCsMsg	  "error"
+	  MaskedZcDiagnostic	  "warning"
+	  IgnoredZcDiagnostic	  "warning"
+	  SolverPrmCheckMsg	  "warning"
+	  InheritedTsInSrcMsg	  "warning"
+	  DiscreteInheritContinuousMsg "warning"
+	  MultiTaskDSMMsg	  "error"
+	  MultiTaskCondExecSysMsg "error"
+	  MultiTaskRateTransMsg	  "error"
+	  SingleTaskRateTransMsg  "none"
+	  TasksWithSamePriorityMsg "warning"
+	  SigSpecEnsureSampleTimeMsg "warning"
+	  CheckMatrixSingularityMsg "none"
+	  IntegerOverflowMsg	  "warning"
+	  Int32ToFloatConvMsg	  "warning"
+	  ParameterDowncastMsg	  "error"
+	  ParameterOverflowMsg	  "error"
+	  ParameterUnderflowMsg	  "none"
+	  ParameterPrecisionLossMsg "warning"
+	  ParameterTunabilityLossMsg "warning"
+	  FixptConstUnderflowMsg  "none"
+	  FixptConstOverflowMsg	  "none"
+	  FixptConstPrecisionLossMsg "none"
+	  UnderSpecifiedDataTypeMsg "none"
+	  UnnecessaryDatatypeConvMsg "none"
+	  VectorMatrixConversionMsg "none"
+	  InvalidFcnCallConnMsg	  "error"
+	  FcnCallInpInsideContextMsg "Use local settings"
+	  SignalLabelMismatchMsg  "none"
+	  UnconnectedInputMsg	  "warning"
+	  UnconnectedOutputMsg	  "warning"
+	  UnconnectedLineMsg	  "warning"
+	  SFcnCompatibilityMsg	  "none"
+	  FrameProcessingCompatibilityMsg "warning"
+	  UniqueDataStoreMsg	  "none"
+	  BusObjectLabelMismatch  "warning"
+	  RootOutportRequireBusObject "warning"
+	  AssertControl		  "UseLocalSettings"
+	  EnableOverflowDetection off
+	  ModelReferenceIOMsg	  "none"
+	  ModelReferenceMultiInstanceNormalModeStructChecksumCheck "error"
+	  ModelReferenceVersionMismatchMessage "none"
+	  ModelReferenceIOMismatchMessage "none"
+	  ModelReferenceCSMismatchMessage "none"
+	  UnknownTsInhSupMsg	  "warning"
+	  ModelReferenceDataLoggingMessage "warning"
+	  ModelReferenceSymbolNameMessage "warning"
+	  ModelReferenceExtraNoncontSigs "error"
+	  StateNameClashWarn	  "warning"
+	  SimStateInterfaceChecksumMismatchMsg "warning"
+	  SimStateOlderReleaseMsg "error"
+	  InitInArrayFormatMsg	  "warning"
+	  StrictBusMsg		  "ErrorLevel1"
+	  BusNameAdapt		  "WarnAndRepair"
+	  NonBusSignalsTreatedAsBus "none"
+	  LoggingUnavailableSignals "error"
+	  BlockIODiagnostic	  "none"
+	  SFUnusedDataAndEventsDiag "warning"
+	  SFUnexpectedBacktrackingDiag "warning"
+	  SFInvalidInputDataAccessInChartInitDiag "warning"
+	  SFNoUnconditionalDefaultTransitionDiag "warning"
+	  SFTransitionOutsideNaturalParentDiag "warning"
+	  SFUnconditionalTransitionShadowingDiag "warning"
+	}
+	Simulink.HardwareCC {
+	  $ObjectID		  6
+	  Version		  "1.12.0"
+	  ProdBitPerChar	  8
+	  ProdBitPerShort	  16
+	  ProdBitPerInt		  32
+	  ProdBitPerLong	  32
+	  ProdBitPerFloat	  32
+	  ProdBitPerDouble	  64
+	  ProdBitPerPointer	  32
+	  ProdLargestAtomicInteger "Char"
+	  ProdLargestAtomicFloat  "None"
+	  ProdIntDivRoundTo	  "Undefined"
+	  ProdEndianess		  "Unspecified"
+	  ProdWordSize		  32
+	  ProdShiftRightIntArith  on
+	  ProdHWDeviceType	  "32-bit Generic"
+	  TargetBitPerChar	  8
+	  TargetBitPerShort	  16
+	  TargetBitPerInt	  32
+	  TargetBitPerLong	  32
+	  TargetBitPerFloat	  32
+	  TargetBitPerDouble	  64
+	  TargetBitPerPointer	  32
+	  TargetLargestAtomicInteger "Char"
+	  TargetLargestAtomicFloat "None"
+	  TargetShiftRightIntArith on
+	  TargetIntDivRoundTo	  "Undefined"
+	  TargetEndianess	  "Unspecified"
+	  TargetWordSize	  32
+	  TargetTypeEmulationWarnSuppressLevel 0
+	  TargetPreprocMaxBitsSint 32
+	  TargetPreprocMaxBitsUint 32
+	  TargetHWDeviceType	  "Specified"
+	  TargetUnknown		  off
+	  ProdEqTarget		  on
+	}
+	Simulink.ModelReferenceCC {
+	  $ObjectID		  7
+	  Version		  "1.12.0"
+	  UpdateModelReferenceTargets "IfOutOfDateOrStructuralChange"
+	  CheckModelReferenceTargetMessage "error"
+	  EnableParallelModelReferenceBuilds off
+	  ParallelModelReferenceErrorOnInvalidPool on
+	  ParallelModelReferenceMATLABWorkerInit "None"
+	  ModelReferenceNumInstancesAllowed "Multi"
+	  PropagateVarSize	  "Infer from blocks in model"
+	  ModelReferencePassRootInputsByReference on
+	  ModelReferenceMinAlgLoopOccurrences off
+	  PropagateSignalLabelsOutOfModel off
+	  SupportModelReferenceSimTargetCustomCode off
+	}
+	Simulink.SFSimCC {
+	  $ObjectID		  8
+	  Version		  "1.12.0"
+	  SFSimEnableDebug	  on
+	  SFSimOverflowDetection  on
+	  SFSimEcho		  on
+	  SimBlas		  on
+	  SimCtrlC		  on
+	  SimExtrinsic		  on
+	  SimIntegrity		  on
+	  SimUseLocalCustomCode	  off
+	  SimParseCustomCode	  on
+	  SimBuildMode		  "sf_incremental_build"
+	}
+	Simulink.RTWCC {
+	  $BackupClass		  "Simulink.RTWCC"
+	  $ObjectID		  9
+	  Version		  "1.12.0"
+	  Array {
+	    Type		    "Cell"
+	    Dimension		    7
+	    Cell		    "IncludeHyperlinkInReport"
+	    Cell		    "GenerateTraceInfo"
+	    Cell		    "GenerateTraceReport"
+	    Cell		    "GenerateTraceReportSl"
+	    Cell		    "GenerateTraceReportSf"
+	    Cell		    "GenerateTraceReportEml"
+	    Cell		    "GenerateSLWebview"
+	    PropName		    "DisabledProps"
+	  }
+	  SystemTargetFile	  "grt.tlc"
+	  GenCodeOnly		  off
+	  MakeCommand		  "make_rtw"
+	  GenerateMakefile	  on
+	  TemplateMakefile	  "grt_default_tmf"
+	  GenerateReport	  off
+	  SaveLog		  off
+	  RTWVerbose		  on
+	  RetainRTWFile		  off
+	  ProfileTLC		  off
+	  TLCDebug		  off
+	  TLCCoverage		  off
+	  TLCAssert		  off
+	  ProcessScriptMode	  "Default"
+	  ConfigurationMode	  "Optimized"
+	  ConfigAtBuild		  off
+	  RTWUseLocalCustomCode	  off
+	  RTWUseSimCustomCode	  off
+	  IncludeHyperlinkInReport off
+	  LaunchReport		  off
+	  TargetLang		  "C"
+	  IncludeBusHierarchyInRTWFileBlockHierarchyMap	off
+	  IncludeERTFirstTime	  off
+	  GenerateTraceInfo	  off
+	  GenerateTraceReport	  off
+	  GenerateTraceReportSl	  off
+	  GenerateTraceReportSf	  off
+	  GenerateTraceReportEml  off
+	  GenerateCodeInfo	  off
+	  GenerateWebview	  off
+	  GenerateCodeMetricsReport off
+	  GenerateCodeReplacementReport	off
+	  RTWCompilerOptimization "Off"
+	  CheckMdlBeforeBuild	  "Off"
+	  CustomRebuildMode	  "OnUpdate"
+	  Array {
+	    Type		    "Handle"
+	    Dimension		    2
+	    Simulink.CodeAppCC {
+	      $ObjectID		      10
+	      Version		      "1.12.0"
+	      Array {
+		Type			"Cell"
+		Dimension		21
+		Cell			"IgnoreCustomStorageClasses"
+		Cell			"IgnoreTestpoints"
+		Cell			"InsertBlockDesc"
+		Cell			"InsertPolySpaceComments"
+		Cell			"SFDataObjDesc"
+		Cell			"MATLABFcnDesc"
+		Cell			"SimulinkDataObjDesc"
+		Cell			"DefineNamingRule"
+		Cell			"SignalNamingRule"
+		Cell			"ParamNamingRule"
+		Cell			"InlinedPrmAccess"
+		Cell			"CustomSymbolStr"
+		Cell			"CustomSymbolStrGlobalVar"
+		Cell			"CustomSymbolStrType"
+		Cell			"CustomSymbolStrField"
+		Cell			"CustomSymbolStrFcn"
+		Cell			"CustomSymbolStrFcnArg"
+		Cell			"CustomSymbolStrBlkIO"
+		Cell			"CustomSymbolStrTmpVar"
+		Cell			"CustomSymbolStrMacro"
+		Cell			"ReqsInCode"
+		PropName		"DisabledProps"
+	      }
+	      ForceParamTrailComments off
+	      GenerateComments	      on
+	      IgnoreCustomStorageClasses on
+	      IgnoreTestpoints	      off
+	      IncHierarchyInIds	      off
+	      MaxIdLength	      31
+	      PreserveName	      off
+	      PreserveNameWithParent  off
+	      ShowEliminatedStatement off
+	      IncAutoGenComments      off
+	      SimulinkDataObjDesc     off
+	      SFDataObjDesc	      off
+	      MATLABFcnDesc	      off
+	      IncDataTypeInIds	      off
+	      MangleLength	      1
+	      CustomSymbolStrGlobalVar "$R$N$M"
+	      CustomSymbolStrType     "$N$R$M"
+	      CustomSymbolStrField    "$N$M"
+	      CustomSymbolStrFcn      "$R$N$M$F"
+	      CustomSymbolStrFcnArg   "rt$I$N$M"
+	      CustomSymbolStrBlkIO    "rtb_$N$M"
+	      CustomSymbolStrTmpVar   "$N$M"
+	      CustomSymbolStrMacro    "$R$N$M"
+	      DefineNamingRule	      "None"
+	      ParamNamingRule	      "None"
+	      SignalNamingRule	      "None"
+	      InsertBlockDesc	      off
+	      InsertPolySpaceComments off
+	      SimulinkBlockComments   on
+	      MATLABSourceComments    off
+	      EnableCustomComments    off
+	      InlinedPrmAccess	      "Literals"
+	      ReqsInCode	      off
+	      UseSimReservedNames     off
+	    }
+	    Simulink.GRTTargetCC {
+	      $BackupClass	      "Simulink.TargetCC"
+	      $ObjectID		      11
+	      Version		      "1.12.0"
+	      Array {
+		Type			"Cell"
+		Dimension		16
+		Cell			"GeneratePreprocessorConditionals"
+		Cell			"IncludeMdlTerminateFcn"
+		Cell			"CombineOutputUpdateFcns"
+		Cell			"SuppressErrorStatus"
+		Cell			"ERTCustomFileBanners"
+		Cell			"GenerateSampleERTMain"
+		Cell			"GenerateTestInterfaces"
+		Cell			"ModelStepFunctionPrototypeControlCompliant"
+		Cell			"CPPClassGenCompliant"
+		Cell			"MultiInstanceERTCode"
+		Cell			"PurelyIntegerCode"
+		Cell			"SupportComplex"
+		Cell			"SupportAbsoluteTime"
+		Cell			"SupportContinuousTime"
+		Cell			"SupportNonInlinedSFcns"
+		Cell			"PortableWordSizes"
+		PropName		"DisabledProps"
+	      }
+	      TargetFcnLib	      "ansi_tfl_table_tmw.mat"
+	      TargetLibSuffix	      ""
+	      TargetPreCompLibLocation ""
+	      CodeReplacementLibrary  "ANSI_C"
+	      UtilityFuncGeneration   "Auto"
+	      ERTMultiwordTypeDef     "System defined"
+	      CodeExecutionProfiling  off
+	      ERTMultiwordLength      256
+	      MultiwordLength	      2048
+	      GenerateFullHeader      on
+	      GenerateSampleERTMain   off
+	      GenerateTestInterfaces  off
+	      IsPILTarget	      off
+	      ModelReferenceCompliant on
+	      ParMdlRefBuildCompliant on
+	      CompOptLevelCompliant   on
+	      ConcurrentExecutionCompliant on
+	      IncludeMdlTerminateFcn  on
+	      GeneratePreprocessorConditionals "Disable all"
+	      CombineOutputUpdateFcns off
+	      CombineSignalStateStructs	off
+	      SuppressErrorStatus     off
+	      ERTFirstTimeCompliant   off
+	      IncludeFileDelimiter    "Auto"
+	      ERTCustomFileBanners    off
+	      SupportAbsoluteTime     on
+	      LogVarNameModifier      "rt_"
+	      MatFileLogging	      on
+	      MultiInstanceERTCode    off
+	      SupportNonFinite	      on
+	      SupportComplex	      on
+	      PurelyIntegerCode	      off
+	      SupportContinuousTime   on
+	      SupportNonInlinedSFcns  on
+	      SupportVariableSizeSignals off
+	      EnableShiftOperators    on
+	      ParenthesesLevel	      "Nominal"
+	      PortableWordSizes	      off
+	      ModelStepFunctionPrototypeControlCompliant off
+	      CPPClassGenCompliant    off
+	      AutosarCompliant	      off
+	      GRTInterface	      on
+	      UseMalloc		      off
+	      ExtMode		      off
+	      ExtModeStaticAlloc      off
+	      ExtModeTesting	      off
+	      ExtModeStaticAllocSize  1000000
+	      ExtModeTransport	      0
+	      ExtModeMexFile	      "ext_comm"
+	      ExtModeIntrfLevel	      "Level1"
+	      RTWCAPISignals	      off
+	      RTWCAPIParams	      off
+	      RTWCAPIStates	      off
+	      RTWCAPIRootIO	      off
+	      GenerateASAP2	      off
+	    }
+	    PropName		    "Components"
+	  }
+	}
+	PropName		"Components"
+      }
+      Name		      "Configuration"
+      CurrentDlgPage	      "Solver"
+      ConfigPrmDlgPosition     [ 400, 210, 1280, 840 ] 
+    }
+    PropName		    "ConfigurationSets"
+  }
+  ExplicitPartitioning	  off
+  BlockDefaults {
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    NamePlacement	    "normal"
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+    ShowName		    on
+    BlockRotation	    0
+    BlockMirror		    off
+  }
+  AnnotationDefaults {
+    HorizontalAlignment	    "center"
+    VerticalAlignment	    "middle"
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+    UseDisplayTextAsClickCallback off
+  }
+  LineDefaults {
+    FontName		    "Helvetica"
+    FontSize		    9
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+  }
+  BlockParameterDefaults {
+    Block {
+      BlockType		      BusCreator
+      Inputs		      "4"
+      DisplayOption	      "none"
+      OutDataTypeStr	      "Inherit: auto"
+      NonVirtualBus	      off
+    }
+    Block {
+      BlockType		      BusSelector
+      OutputAsBus	      off
+    }
+    Block {
+      BlockType		      Clock
+      DisplayTime	      off
+      Decimation	      "10"
+    }
+    Block {
+      BlockType		      Concatenate
+      NumInputs		      "2"
+      Mode		      "Vector"
+      ConcatenateDimension    "1"
+    }
+    Block {
+      BlockType		      Constant
+      Value		      "1"
+      VectorParams1D	      on
+      SamplingMode	      "Sample based"
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeStr	      "Inherit: Inherit from 'Constant value'"
+      LockScale		      off
+      SampleTime	      "inf"
+      FramePeriod	      "inf"
+      PreserveConstantTs      off
+    }
+    Block {
+      BlockType		      Demux
+      Outputs		      "4"
+      DisplayOption	      "none"
+      BusSelectionMode	      off
+    }
+    Block {
+      BlockType		      Fcn
+      Expr		      "sin(u[1])"
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      Gain
+      Gain		      "1"
+      Multiplication	      "Element-wise(K.*u)"
+      ParamMin		      "[]"
+      ParamMax		      "[]"
+      ParamDataTypeStr	      "Inherit: Same as input"
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeStr	      "Inherit: Same as input"
+      LockScale		      off
+      RndMeth		      "Floor"
+      SaturateOnIntegerOverflow	on
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      Inport
+      Port		      "1"
+      OutputFunctionCall      off
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeStr	      "Inherit: auto"
+      LockScale		      off
+      BusOutputAsStruct	      off
+      PortDimensions	      "-1"
+      VarSizeSig	      "Inherit"
+      SampleTime	      "-1"
+      SignalType	      "auto"
+      SamplingMode	      "auto"
+      LatchByDelayingOutsideSignal off
+      LatchInputForFeedbackSignals off
+      Interpolate	      on
+    }
+    Block {
+      BlockType		      Integrator
+      ExternalReset	      "none"
+      InitialConditionSource  "internal"
+      InitialCondition	      "0"
+      LimitOutput	      off
+      UpperSaturationLimit    "inf"
+      LowerSaturationLimit    "-inf"
+      ShowSaturationPort      off
+      ShowStatePort	      off
+      AbsoluteTolerance	      "auto"
+      IgnoreLimit	      off
+      ZeroCross		      on
+      ContinuousStateAttributes	"''"
+    }
+    Block {
+      BlockType		      MATLABFcn
+      MATLABFcn		      "sin"
+      OutputDimensions	      "-1"
+      OutputSignalType	      "auto"
+      Output1D		      on
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      Mux
+      Inputs		      "4"
+      DisplayOption	      "none"
+      UseBusObject	      off
+      BusObject		      "BusObject"
+      NonVirtualBus	      off
+    }
+    Block {
+      BlockType		      Outport
+      Port		      "1"
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeStr	      "Inherit: auto"
+      LockScale		      off
+      BusOutputAsStruct	      off
+      PortDimensions	      "-1"
+      VarSizeSig	      "Inherit"
+      SampleTime	      "-1"
+      SignalType	      "auto"
+      SamplingMode	      "auto"
+      SourceOfInitialOutputValue "Dialog"
+      OutputWhenDisabled      "held"
+      InitialOutput	      "[]"
+    }
+    Block {
+      BlockType		      Product
+      Inputs		      "2"
+      Multiplication	      "Element-wise(.*)"
+      CollapseMode	      "All dimensions"
+      CollapseDim	      "1"
+      InputSameDT	      on
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeStr	      "Inherit: Same as first input"
+      LockScale		      off
+      RndMeth		      "Zero"
+      SaturateOnIntegerOverflow	on
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      RateLimiter
+      RisingSlewLimit	      "1"
+      FallingSlewLimit	      "-1"
+      SampleTimeMode	      "continuous"
+      InitialCondition	      "0"
+      LinearizeAsGain	      on
+    }
+    Block {
+      BlockType		      Reshape
+      OutputDimensionality    "1-D array"
+      OutputDimensions	      "[1,1]"
+    }
+    Block {
+      BlockType		      S-Function
+      FunctionName	      "system"
+      SFunctionModules	      "''"
+      PortCounts	      "[]"
+      SFunctionDeploymentMode off
+    }
+    Block {
+      BlockType		      Saturate
+      UpperLimitSource	      "Dialog"
+      UpperLimit	      "0.5"
+      LowerLimitSource	      "Dialog"
+      LowerLimit	      "-0.5"
+      LinearizeAsGain	      on
+      ZeroCross		      on
+      SampleTime	      "-1"
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeStr	      "Inherit: Same as input"
+      LockScale		      off
+      RndMeth		      "Floor"
+    }
+    Block {
+      BlockType		      SubSystem
+      ShowPortLabels	      "FromPortIcon"
+      Permissions	      "ReadWrite"
+      PermitHierarchicalResolution "All"
+      TreatAsAtomicUnit	      off
+      CheckFcnCallInpInsideContextMsg off
+      SystemSampleTime	      "-1"
+      RTWFcnNameOpts	      "Auto"
+      RTWFileNameOpts	      "Auto"
+      RTWMemSecFuncInitTerm   "Inherit from model"
+      RTWMemSecFuncExecute    "Inherit from model"
+      RTWMemSecDataConstants  "Inherit from model"
+      RTWMemSecDataInternal   "Inherit from model"
+      RTWMemSecDataParameters "Inherit from model"
+      SimViewingDevice	      off
+      DataTypeOverride	      "UseLocalSettings"
+      DataTypeOverrideAppliesTo	"AllNumericTypes"
+      MinMaxOverflowLogging   "UseLocalSettings"
+      SFBlockType	      "NONE"
+      Variant		      off
+      GeneratePreprocessorConditionals off
+    }
+    Block {
+      BlockType		      Sum
+      IconShape		      "rectangular"
+      Inputs		      "++"
+      CollapseMode	      "All dimensions"
+      CollapseDim	      "1"
+      InputSameDT	      on
+      AccumDataTypeStr	      "Inherit: Inherit via internal rule"
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeStr	      "Inherit: Same as first input"
+      LockScale		      off
+      RndMeth		      "Floor"
+      SaturateOnIntegerOverflow	on
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      Trigonometry
+      Operator		      "sin"
+      ApproximationMethod     "None"
+      NumberOfIterations      "11"
+      OutputSignalType	      "auto"
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      UnitDelay
+      X0		      "0"
+      InputProcessing	      "Inherited"
+      SampleTime	      "1"
+      StateMustResolveToSignalObject off
+      RTWStateStorageClass    "Auto"
+      HasFrameUpgradeWarning  on
+    }
+  }
+  System {
+    Name		    "roblocks"
+    Location		    [740, 56, 1049, 479]
+    Open		    on
+    ModelBrowserVisibility  off
+    ModelBrowserWidth	    212
+    ScreenColor		    "white"
+    PaperOrientation	    "landscape"
+    PaperPositionMode	    "auto"
+    PaperType		    "A4"
+    PaperUnits		    "centimeters"
+    TiledPaperMargins	    [1.270000, 1.270000, 1.270000, 1.270000]
+    TiledPageScale	    1
+    ShowPageBoundaries	    off
+    ZoomFactor		    "100"
+    ReportName		    "simulink-default.rpt"
+    SIDHighWatermark	    "648"
+    Block {
+      BlockType		      SubSystem
+      Name		      "Dynamics"
+      SID		      "5"
+      Ports		      []
+      Position		      [152, 199, 260, 241]
+      BackgroundColor	      "darkGreen"
+      ShowName		      off
+      LibraryVersion	      "1.225"
+      MinAlgLoopOccurrences   off
+      PropExecContextOutsideSubsystem off
+      RTWSystemCode	      "Auto"
+      FunctionWithSeparateData off
+      Opaque		      off
+      RequestExecContextInheritance off
+      MaskHideContents	      off
+      MaskDisplay	      "color('darkBlue')\ndisp('Dynamics')"
+      MaskIconFrame	      on
+      MaskIconOpaque	      on
+      MaskIconRotate	      "none"
+      MaskPortRotate	      "default"
+      MaskIconUnits	      "pixels"
+      System {
+	Name			"Dynamics"
+	Location		[1110, 153, 1489, 703]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"A4"
+	PaperUnits		"centimeters"
+	TiledPaperMargins	[1.270000, 1.270000, 1.270000, 1.270000]
+	TiledPageScale		1
+	ShowPageBoundaries	off
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "Bicycle"
+	  SID			  "51"
+	  Ports			  [2, 3]
+	  Position		  [115, 207, 175, 283]
+	  DropShadow		  on
+	  LibraryVersion	  "1.61"
+	  MinAlgLoopOccurrences	  off
+	  PropExecContextOutsideSubsystem off
+	  RTWSystemCode		  "Auto"
+	  FunctionWithSeparateData off
+	  Opaque		  off
+	  RequestExecContextInheritance	off
+	  MaskHideContents	  off
+	  MaskDescription	  "Kino-dynamic model of bicycle vehicle"
+	  MaskHelp		  "Kino-dynamic model of bicycle vehicle, also known as Ackermann vehicle\nmodel.\n\n<b>Parameters::</b>\n"
+	  " \nAcceleration (1x1)   Vehicle acceleration limit [m/s2]\nVelocity limit (1x1)  Vehicle speed limit [m/s]\nSteerin"
+	  "g limits (1x1) Steering angle limit [rad]\nInitial state (1x3) Initial state (x, y, theta)\nHandbrake (1x1) Vehicle"
+	  " cannot move if non-zero\n \n<b>Inputs::</b>\n \nv (1x1) velocity demand [m/s]\ngamma (1x1) steering angle [rad]\n "
+	  "\n<b>Outputs::</b>\n \nx (1x1) x-coordinate in world frame [m]\ny (1x1) x-coordinate in world frame [m]\ntheta (1x1"
+	  ") heading angle in world frame [rad]\n\n \n<b>Notes::</b>\n \n- Steering limit is symmetric between -limit and +lim"
+	  "it\n- Same dynamic model as the Toolbox class Vehicle.\n\n"
+	  MaskPromptString	  "Acceleration|Velocity limit|Steering limits|Wheel base|Initial state (x, y, theta)|Handbrake"
+	  MaskStyleString	  "edit,edit,edit,edit,edit,edit"
+	  MaskVariables		  "accel=@1;vlim=@2;alim=@3;L=@4;x0=@5;handbrake=@6;"
+	  MaskTunableValueString  "on,on,on,on,on,on"
+	  MaskCallbackString	  "|||||"
+	  MaskEnableString	  "on,on,on,on,on,on"
+	  MaskVisibilityString	  "on,on,on,on,on,on"
+	  MaskToolTipString	  "on,on,on,on,on,on"
+	  MaskIconFrame		  on
+	  MaskIconOpaque	  on
+	  MaskIconRotate	  "none"
+	  MaskPortRotate	  "default"
+	  MaskIconUnits		  "autoscale"
+	  MaskValueString	  "1|1|2|0|[0, 0, 0]|0"
+	  System {
+	    Name		    "Bicycle"
+	    Location		    [101, 504, 733, 773]
+	    Open		    off
+	    ModelBrowserVisibility  off
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "A4"
+	    PaperUnits		    "centimeters"
+	    TiledPaperMargins	    [1.270000, 1.270000, 1.270000, 1.270000]
+	    TiledPageScale	    1
+	    ShowPageBoundaries	    off
+	    ZoomFactor		    "100"
+	    SIDHighWatermark	    "227"
+	    SIDPrevWatermark	    "225"
+	    Block {
+	      BlockType		      Inport
+	      Name		      "v"
+	      SID		      "51:2"
+	      Position		      [25, 43, 55, 57]
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "gamma"
+	      SID		      "51:3"
+	      Position		      [25, 158, 55, 172]
+	      Port		      "2"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Constant
+	      Name		      "Constant"
+	      SID		      "51:222"
+	      Position		      [320, 210, 395, 240]
+	      ShowName		      off
+	      Value		      "handbrake"
+	    }
+	    Block {
+	      BlockType		      Demux
+	      Name		      "Demux"
+	      SID		      "51:4"
+	      Ports		      [1, 3]
+	      Position		      [525, 104, 530, 166]
+	      ShowName		      off
+	      Outputs		      "3"
+	      DisplayOption	      "bar"
+	    }
+	    Block {
+	      BlockType		      Fcn
+	      Name		      "Fcn"
+	      SID		      "51:226"
+	      Position		      [135, 150, 195, 180]
+	      ShowName		      off
+	      Expr		      "tan(u)/L"
+	    }
+	    Block {
+	      BlockType		      Integrator
+	      Name		      "Integrator"
+	      SID		      "51:227"
+	      Ports		      [2, 1]
+	      Position		      [440, 113, 470, 157]
+	      ExternalReset	      "level"
+	      InitialCondition	      "x0"
+	    }
+	    Block {
+	      BlockType		      Mux
+	      Name		      "Mux"
+	      SID		      "51:6"
+	      Ports		      [3, 1]
+	      Position		      [310, 81, 315, 149]
+	      ShowName		      off
+	      Inputs		      "3"
+	      DisplayOption	      "bar"
+	    }
+	    Block {
+	      BlockType		      Product
+	      Name		      "Product"
+	      SID		      "51:7"
+	      Ports		      [2, 1]
+	      Position		      [365, 107, 395, 138]
+	      InputSameDT	      off
+	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+	      SaturateOnIntegerOverflow	off
+	    }
+	    Block {
+	      BlockType		      Trigonometry
+	      Name		      "Trigonometric\nFunction"
+	      SID		      "51:8"
+	      Ports		      [1, 1]
+	      Position		      [240, 80, 270, 110]
+	      ShowName		      off
+	      Operator		      "cos"
+	    }
+	    Block {
+	      BlockType		      Trigonometry
+	      Name		      "Trigonometric\nFunction2"
+	      SID		      "51:9"
+	      Ports		      [1, 1]
+	      Position		      [240, 125, 270, 155]
+	      ShowName		      off
+	    }
+	    Block {
+	      BlockType		      RateLimiter
+	      Name		      "acceleration\nlimit"
+	      SID		      "51:10"
+	      Position		      [150, 35, 180, 65]
+	      RisingSlewLimit	      "accel"
+	      FallingSlewLimit	      "-accel"
+	      SampleTimeMode	      "inherited"
+	    }
+	    Block {
+	      BlockType		      Saturate
+	      Name		      "steering\nangle\nlimit"
+	      SID		      "51:11"
+	      Ports		      [1, 1]
+	      Position		      [80, 150, 110, 180]
+	      InputPortMap	      "u0"
+	      UpperLimit	      "alim"
+	      LowerLimit	      "-alim"
+	    }
+	    Block {
+	      BlockType		      Saturate
+	      Name		      "vel\nlimit"
+	      SID		      "51:12"
+	      Ports		      [1, 1]
+	      Position		      [90, 35, 120, 65]
+	      InputPortMap	      "u0"
+	      UpperLimit	      "vlim"
+	      LowerLimit	      "-vlim"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "x"
+	      SID		      "51:13"
+	      Position		      [570, 108, 600, 122]
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "y"
+	      SID		      "51:14"
+	      Position		      [570, 148, 600, 162]
+	      Port		      "2"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "theta"
+	      SID		      "51:15"
+	      Position		      [570, 193, 600, 207]
+	      Port		      "3"
+	      IconDisplay	      "Port number"
+	    }
+	    Line {
+	      SrcBlock		      "Constant"
+	      SrcPort		      1
+	      Points		      [5, 0; 0, -80]
+	      DstBlock		      "Integrator"
+	      DstPort		      2
+	    }
+	    Line {
+	      SrcBlock		      "steering\nangle\nlimit"
+	      SrcPort		      1
+	      DstBlock		      "Fcn"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Trigonometric\nFunction2"
+	      SrcPort		      1
+	      Points		      [5, 0; 0, -25]
+	      DstBlock		      "Mux"
+	      DstPort		      2
+	    }
+	    Line {
+	      SrcBlock		      "vel\nlimit"
+	      SrcPort		      1
+	      DstBlock		      "acceleration\nlimit"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Mux"
+	      SrcPort		      1
+	      DstBlock		      "Product"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "v"
+	      SrcPort		      1
+	      DstBlock		      "vel\nlimit"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "gamma"
+	      SrcPort		      1
+	      DstBlock		      "steering\nangle\nlimit"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Demux"
+	      SrcPort		      2
+	      Points		      [20, 0]
+	      DstBlock		      "y"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Demux"
+	      SrcPort		      1
+	      DstBlock		      "x"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Demux"
+	      SrcPort		      3
+	      Points		      [5, 0; 0, 45]
+	      Branch {
+		DstBlock		"theta"
+		DstPort			1
+	      }
+	      Branch {
+		Points			[-325, 0; 0, -60]
+		Branch {
+		  DstBlock		  "Trigonometric\nFunction2"
+		  DstPort		  1
+		}
+		Branch {
+		  Points		  [0, -45]
+		  DstBlock		  "Trigonometric\nFunction"
+		  DstPort		  1
+		}
+	      }
+	    }
+	    Line {
+	      SrcBlock		      "Integrator"
+	      SrcPort		      1
+	      DstBlock		      "Demux"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Product"
+	      SrcPort		      1
+	      DstBlock		      "Integrator"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "acceleration\nlimit"
+	      SrcPort		      1
+	      Points		      [155, 0; 0, 80]
+	      DstBlock		      "Product"
+	      DstPort		      2
+	    }
+	    Line {
+	      SrcBlock		      "Trigonometric\nFunction"
+	      SrcPort		      1
+	      DstBlock		      "Mux"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Fcn"
+	      SrcPort		      1
+	      Points		      [95, 0]
+	      DstBlock		      "Mux"
+	      DstPort		      3
+	    }
+	    Annotation {
+	      SID		      "51:228"
+	      Name		      "Bicycle kinematic model for mobile robot"
+	      Position		      [368, 29]
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "Control Mixer"
+	  SID			  "52"
+	  Ports			  [4, 5]
+	  Position		  [115, 330, 175, 470]
+	  DropShadow		  on
+	  LibraryVersion	  "1.61"
+	  MinAlgLoopOccurrences	  off
+	  PropExecContextOutsideSubsystem off
+	  RTWSystemCode		  "Auto"
+	  FunctionWithSeparateData off
+	  Opaque		  off
+	  RequestExecContextInheritance	off
+	  MaskHideContents	  off
+	  MaskDescription	  "Quadrotor control mixer"
+	  MaskHelp		  "Determine rotor speeds based on desired torques and thrust.\n \n<b>Inputs::</b>\n \ntau pitch (1x1)  d"
+	  "esired pitching torque [Nm]\ntau roll (1x1)   desired rolling torque [Nm]\ntau yaw (1x1)    desired yawing torque ["
+	  "Nm]\nT (1x1)          desired thrust [N]\n \n<b>Outputs::</b>\n \nw1 (1x1) angular velocity of rotor 1 [rad]\nw2 (1"
+	  "x1) angular velocity of rotor 2 [rad]\nw3 (1x1) angular velocity of rotor 3 [rad]\nw4 (1x1) angular velocity of rot"
+	  "or 4 [rad]\n \n<b>Notes::</b>\n \n- Assumes the rotor labelling convention of RVC Fig 4.16.\n- The quadrotor is und"
+	  "eractuated and has only 4 inputs.\n"
+	  MaskIconFrame		  on
+	  MaskIconOpaque	  on
+	  MaskIconRotate	  "none"
+	  MaskPortRotate	  "default"
+	  MaskIconUnits		  "autoscale"
+	  System {
+	    Name		    "Control Mixer"
+	    Location		    [435, 295, 1300, 676]
+	    Open		    off
+	    ModelBrowserVisibility  off
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "A4"
+	    PaperUnits		    "centimeters"
+	    TiledPaperMargins	    [1.270000, 1.270000, 1.270000, 1.270000]
+	    TiledPageScale	    1
+	    ShowPageBoundaries	    off
+	    ZoomFactor		    "100"
+	    SIDHighWatermark	    "225"
+	    SIDPrevWatermark	    "225"
+	    Block {
+	      BlockType		      Inport
+	      Name		      "tau pitch"
+	      SID		      "52:156"
+	      Position		      [15, 78, 45, 92]
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "tau roll"
+	      SID		      "52:157"
+	      Position		      [15, 123, 45, 137]
+	      Port		      "2"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "tau yaw"
+	      SID		      "52:158"
+	      Position		      [15, 243, 45, 257]
+	      Port		      "3"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "T"
+	      SID		      "52:159"
+	      Position		      [15, 283, 45, 297]
+	      Port		      "4"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Gain
+	      Name		      "Gain1"
+	      SID		      "52:160"
+	      Position		      [595, 205, 625, 235]
+	      ShowName		      off
+	      Gain		      "-1"
+	      ParamDataTypeStr	      "Inherit: Inherit via internal rule"
+	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+	      SaturateOnIntegerOverflow	off
+	    }
+	    Block {
+	      BlockType		      Gain
+	      Name		      "Gain2"
+	      SID		      "52:161"
+	      Position		      [595, 115, 625, 145]
+	      ShowName		      off
+	      Gain		      "-1"
+	      ParamDataTypeStr	      "Inherit: Inherit via internal rule"
+	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+	      SaturateOnIntegerOverflow	off
+	    }
+	    Block {
+	      BlockType		      Mux
+	      Name		      "Mux"
+	      SID		      "52:162"
+	      Ports		      [4, 1]
+	      Position		      [480, 276, 485, 314]
+	      ShowName		      off
+	      DisplayOption	      "bar"
+	    }
+	    Block {
+	      BlockType		      Saturate
+	      Name		      "Saturation1"
+	      SID		      "52:163"
+	      Ports		      [1, 1]
+	      Position		      [520, 115, 550, 145]
+	      ShowName		      off
+	      InputPortMap	      "u0"
+	      UpperLimit	      "1000"
+	      LowerLimit	      "700"
+	    }
+	    Block {
+	      BlockType		      Saturate
+	      Name		      "Saturation2"
+	      SID		      "52:164"
+	      Ports		      [1, 1]
+	      Position		      [520, 70, 550, 100]
+	      ShowName		      off
+	      InputPortMap	      "u0"
+	      UpperLimit	      "1000"
+	      LowerLimit	      "700"
+	    }
+	    Block {
+	      BlockType		      Saturate
+	      Name		      "Saturation3"
+	      SID		      "52:165"
+	      Ports		      [1, 1]
+	      Position		      [520, 160, 550, 190]
+	      ShowName		      off
+	      InputPortMap	      "u0"
+	      UpperLimit	      "1000"
+	      LowerLimit	      "700"
+	    }
+	    Block {
+	      BlockType		      Saturate
+	      Name		      "Saturation4"
+	      SID		      "52:166"
+	      Ports		      [1, 1]
+	      Position		      [520, 205, 550, 235]
+	      ShowName		      off
+	      InputPortMap	      "u0"
+	      UpperLimit	      "1000"
+	      LowerLimit	      "700"
+	    }
+	    Block {
+	      BlockType		      Sum
+	      Name		      "Sum1"
+	      SID		      "52:167"
+	      Ports		      [2, 1]
+	      Position		      [240, 75, 260, 95]
+	      ShowName		      off
+	      IconShape		      "round"
+	      Inputs		      "|++"
+	    }
+	    Block {
+	      BlockType		      Sum
+	      Name		      "Sum10"
+	      SID		      "52:168"
+	      Ports		      [2, 1]
+	      Position		      [320, 120, 340, 140]
+	      ShowName		      off
+	      IconShape		      "round"
+	      Inputs		      "|++"
+	    }
+	    Block {
+	      BlockType		      Sum
+	      Name		      "Sum11"
+	      SID		      "52:169"
+	      Ports		      [2, 1]
+	      Position		      [345, 165, 365, 185]
+	      ShowName		      off
+	      IconShape		      "round"
+	      Inputs		      "|++"
+	    }
+	    Block {
+	      BlockType		      Sum
+	      Name		      "Sum12"
+	      SID		      "52:170"
+	      Ports		      [2, 1]
+	      Position		      [370, 210, 390, 230]
+	      ShowName		      off
+	      IconShape		      "round"
+	      Inputs		      "|++"
+	    }
+	    Block {
+	      BlockType		      Sum
+	      Name		      "Sum3"
+	      SID		      "52:171"
+	      Ports		      [2, 1]
+	      Position		      [215, 120, 235, 140]
+	      ShowName		      off
+	      IconShape		      "round"
+	      Inputs		      "|--"
+	    }
+	    Block {
+	      BlockType		      Sum
+	      Name		      "Sum5"
+	      SID		      "52:172"
+	      Ports		      [2, 1]
+	      Position		      [190, 165, 210, 185]
+	      ShowName		      off
+	      IconShape		      "round"
+	      Inputs		      "|-+"
+	    }
+	    Block {
+	      BlockType		      Sum
+	      Name		      "Sum7"
+	      SID		      "52:173"
+	      Ports		      [2, 1]
+	      Position		      [165, 210, 185, 230]
+	      ShowName		      off
+	      IconShape		      "round"
+	      Inputs		      "|+-"
+	    }
+	    Block {
+	      BlockType		      Sum
+	      Name		      "Sum9"
+	      SID		      "52:174"
+	      Ports		      [2, 1]
+	      Position		      [290, 75, 310, 95]
+	      ShowName		      off
+	      IconShape		      "round"
+	      Inputs		      "|++"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "w1"
+	      SID		      "52:175"
+	      Position		      [650, 78, 680, 92]
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "w2"
+	      SID		      "52:176"
+	      Position		      [650, 123, 680, 137]
+	      Port		      "2"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "w3"
+	      SID		      "52:177"
+	      Position		      [650, 168, 680, 182]
+	      Port		      "3"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "w4"
+	      SID		      "52:178"
+	      Position		      [650, 213, 680, 227]
+	      Port		      "4"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "all"
+	      SID		      "52:179"
+	      Position		      [535, 288, 565, 302]
+	      Port		      "5"
+	      IconDisplay	      "Port number"
+	    }
+	    Line {
+	      SrcBlock		      "Gain1"
+	      SrcPort		      1
+	      DstBlock		      "w4"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Gain2"
+	      SrcPort		      1
+	      DstBlock		      "w2"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Mux"
+	      SrcPort		      1
+	      DstBlock		      "all"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "tau roll"
+	      SrcPort		      1
+	      Points		      [35, 0]
+	      Branch {
+		Points			[0, 90]
+		DstBlock		"Sum7"
+		DstPort			1
+	      }
+	      Branch {
+		DstBlock		"Sum3"
+		DstPort			1
+	      }
+	    }
+	    Line {
+	      SrcBlock		      "T"
+	      SrcPort		      1
+	      Points		      [250, 0]
+	      Branch {
+		DstBlock		"Sum9"
+		DstPort			2
+	      }
+	      Branch {
+		Points			[30, 0]
+		Branch {
+		  DstBlock		  "Sum10"
+		  DstPort		  2
+		}
+		Branch {
+		  Points		  [35, 0]
+		  Branch {
+		    Points		    [-10, 0]
+		    DstBlock		    "Sum11"
+		    DstPort		    2
+		  }
+		  Branch {
+		    Points		    [15, 0]
+		    DstBlock		    "Sum12"
+		    DstPort		    2
+		  }
+		}
+	      }
+	    }
+	    Line {
+	      SrcBlock		      "Sum12"
+	      SrcPort		      1
+	      Points		      [10, 0]
+	      Branch {
+		Points			[0, 90]
+		DstBlock		"Mux"
+		DstPort			4
+	      }
+	      Branch {
+		DstBlock		"Saturation4"
+		DstPort			1
+	      }
+	    }
+	    Line {
+	      SrcBlock		      "Sum11"
+	      SrcPort		      1
+	      Points		      [45, 0]
+	      Branch {
+		Points			[0, 125]
+		DstBlock		"Mux"
+		DstPort			3
+	      }
+	      Branch {
+		DstBlock		"Saturation3"
+		DstPort			1
+	      }
+	    }
+	    Line {
+	      SrcBlock		      "Sum10"
+	      SrcPort		      1
+	      Points		      [85, 0]
+	      Branch {
+		Points			[0, 160]
+		DstBlock		"Mux"
+		DstPort			2
+	      }
+	      Branch {
+		DstBlock		"Saturation1"
+		DstPort			1
+	      }
+	    }
+	    Line {
+	      SrcBlock		      "Sum9"
+	      SrcPort		      1
+	      Points		      [130, 0]
+	      Branch {
+		Points			[0, 195]
+		DstBlock		"Mux"
+		DstPort			1
+	      }
+	      Branch {
+		DstBlock		"Saturation2"
+		DstPort			1
+	      }
+	    }
+	    Line {
+	      SrcBlock		      "Sum7"
+	      SrcPort		      1
+	      DstBlock		      "Sum12"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Sum5"
+	      SrcPort		      1
+	      DstBlock		      "Sum11"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Sum3"
+	      SrcPort		      1
+	      DstBlock		      "Sum10"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Sum1"
+	      SrcPort		      1
+	      DstBlock		      "Sum9"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "tau pitch"
+	      SrcPort		      1
+	      Points		      [50, 0]
+	      Branch {
+		Points			[0, 90]
+		DstBlock		"Sum5"
+		DstPort			1
+	      }
+	      Branch {
+		DstBlock		"Sum1"
+		DstPort			1
+	      }
+	    }
+	    Line {
+	      SrcBlock		      "Saturation4"
+	      SrcPort		      1
+	      DstBlock		      "Gain1"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Saturation3"
+	      SrcPort		      1
+	      DstBlock		      "w3"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Saturation1"
+	      SrcPort		      1
+	      DstBlock		      "Gain2"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Saturation2"
+	      SrcPort		      1
+	      DstBlock		      "w1"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "tau yaw"
+	      SrcPort		      1
+	      Points		      [125, 0]
+	      Branch {
+		Points			[25, 0]
+		Branch {
+		  Points		  [25, 0]
+		  Branch {
+		    Points		    [25, 0]
+		    DstBlock		    "Sum1"
+		    DstPort		    2
+		  }
+		  Branch {
+		    DstBlock		    "Sum3"
+		    DstPort		    2
+		  }
+		}
+		Branch {
+		  DstBlock		  "Sum5"
+		  DstPort		  2
+		}
+	      }
+	      Branch {
+		DstBlock		"Sum7"
+		DstPort			2
+	      }
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "Quadrotor"
+	  SID			  "53"
+	  Ports			  [4, 1]
+	  Position		  [230, 332, 290, 443]
+	  DropShadow		  on
+	  LibraryVersion	  "1.61"
+	  MinAlgLoopOccurrences	  off
+	  PropExecContextOutsideSubsystem off
+	  RTWSystemCode		  "Auto"
+	  FunctionWithSeparateData off
+	  Opaque		  off
+	  RequestExecContextInheritance	off
+	  MaskHideContents	  off
+	  MaskDescription	  "Quadrotor dynamics"
+	  MaskHelp		  "Integrate spatial velocity to update pose represented as a homogeneous\ntransformation.\n \n<b>Paramet"
+	  "ers::</b>\n \nq (struct)  A structure containing quadrotor dynamics\n\nThe elements of q are:\n\n J         Flyer r"
+	  "otational inertia matrix (3x3)\n h         Height of rotors above CoG (1x1)\n d         Length of flyer arms (1x1)\n"
+	  " nb        Number of blades per rotor (1x1)\n r         Rotor radius (1x1)\n c         Blade chord (1x1)\n e       "
+	  "  Flapping hinge offset (1x1)\n Mb        Rotor blade mass (1x1)\n Mc        Estimated hub clamp mass (1x1)\n ec   "
+	  "     Blade root clamp displacement (1x1)\n Ib        Rotor blade rotational inertia (1x1)\n Ic        Estimated roo"
+	  "t clamp inertia (1x1)\n mb        Static blade moment (1x1)\n Ir        Total rotor inertia (1x1)\n Ct        Non-d"
+	  "im. thrust coefficient (1x1)\n Cq        Non-dim. torque coefficient (1x1)\n sigma     Rotor solidity ratio (1x1)\n"
+	  " thetat    Blade tip angle (1x1)\n theta0    Blade root angle (1x1)\n theta1    Blade twist angle (1x1)\n theta75  "
+	  " 3/4 blade angle (1x1)\n thetai    Blade ideal root approximation (1x1)\n a         Lift slope gradient (1x1)\n A  "
+	  "       Rotor disc area (1x1)\n gamma     Lock number (1x1)\n\n \n<b>Inputs::</b>\n \nw1 (1x1) angular velocity of r"
+	  "otor 1 [rad]\nw2 (1x1) angular velocity of rotor 2 [rad]\nw3 (1x1) angular velocity of rotor 3 [rad]\nw4 (1x1) angu"
+	  "lar velocity of rotor 4 [rad]\n\n<b>Outputs::</b>\n \nX (1x12) state vector (x, y, z, thr, thp, thy, xd, yd, zd, th"
+	  "rd, thpd, thyd)\n\n(x,y,z) is the position in the world frame [m]\n(thr, thp, thy) the roll/pitch/yaw orientation i"
+	  "n the world frame [rad]\n(xd,yd,zd) is the velocity in the body frame [m]\n(thrd,thpd,thyd) is the roll/pitch/yaw r"
+	  "ates in the body frame [rad/s]\n \n<b>Notes::</b>\n \n- See also mdl_quadrotor which defines parameters for the ANU"
+	  " X4 flyer.\n"
+	  MaskPromptString	  "Quadrotor params"
+	  MaskStyleString	  "edit"
+	  MaskVariables		  "quad=@1;"
+	  MaskTunableValueString  "on"
+	  MaskEnableString	  "on"
+	  MaskVisibilityString	  "on"
+	  MaskToolTipString	  "on"
+	  MaskIconFrame		  on
+	  MaskIconOpaque	  on
+	  MaskIconRotate	  "none"
+	  MaskPortRotate	  "default"
+	  MaskIconUnits		  "autoscale"
+	  MaskValueString	  "0"
+	  System {
+	    Name		    "Quadrotor"
+	    Location		    [64, 292, 506, 668]
+	    Open		    off
+	    ModelBrowserVisibility  off
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "A4"
+	    PaperUnits		    "centimeters"
+	    TiledPaperMargins	    [1.270000, 1.270000, 1.270000, 1.270000]
+	    TiledPageScale	    1
+	    ShowPageBoundaries	    off
+	    ZoomFactor		    "100"
+	    SIDHighWatermark	    "225"
+	    SIDPrevWatermark	    "225"
+	    Block {
+	      BlockType		      Inport
+	      Name		      "w 1"
+	      SID		      "53:181"
+	      Position		      [25, 128, 55, 142]
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "w 2"
+	      SID		      "53:182"
+	      Position		      [25, 158, 55, 172]
+	      Port		      "2"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "w 3"
+	      SID		      "53:183"
+	      Position		      [25, 188, 55, 202]
+	      Port		      "3"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "w 4"
+	      SID		      "53:184"
+	      Position		      [25, 218, 55, 232]
+	      Port		      "4"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      BusCreator
+	      Name		      "Bus\nCreator"
+	      SID		      "53:185"
+	      Ports		      [12, 1]
+	      Position		      [305, 17, 310, 338]
+	      ShowName		      off
+	      Inputs		      "'X','Y','Z','yaw','pitch','roll','dx','dy','dz','dyaw','dpitch','droll'"
+	      DisplayOption	      "bar"
+	    }
+	    Block {
+	      BlockType		      Demux
+	      Name		      "Demux"
+	      SID		      "53:186"
+	      Ports		      [1, 12]
+	      Position		      [230, 37, 235, 318]
+	      BackgroundColor	      "black"
+	      ShowName		      off
+	      Outputs		      "12"
+	      Port {
+		PortNumber		1
+		Name			"X"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	      Port {
+		PortNumber		2
+		Name			"Y"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	      Port {
+		PortNumber		3
+		Name			"Z"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	      Port {
+		PortNumber		4
+		Name			"yaw"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	      Port {
+		PortNumber		5
+		Name			"pitch"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	      Port {
+		PortNumber		6
+		Name			"roll"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	      Port {
+		PortNumber		7
+		Name			"dx"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	      Port {
+		PortNumber		8
+		Name			"dy"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	      Port {
+		PortNumber		9
+		Name			"dz"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	      Port {
+		PortNumber		10
+		Name			"dyaw"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	      Port {
+		PortNumber		11
+		Name			"dpitch"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	      Port {
+		PortNumber		12
+		Name			"droll"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	    }
+	    Block {
+	      BlockType		      S-Function
+	      Name		      "Dynamics"
+	      SID		      "53:187"
+	      Ports		      [1, 1]
+	      Position		      [110, 165, 195, 195]
+	      FunctionName	      "quadrotor_dynamics"
+	      Parameters	      "quad"
+	      EnableBusSupport	      off
+	    }
+	    Block {
+	      BlockType		      Mux
+	      Name		      "Mux"
+	      SID		      "53:188"
+	      Ports		      [4, 1]
+	      Position		      [80, 119, 85, 241]
+	      ShowName		      off
+	      DisplayOption	      "bar"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "X"
+	      SID		      "53:189"
+	      Position		      [345, 173, 375, 187]
+	      IconDisplay	      "Port number"
+	    }
+	    Line {
+	      Name		      "droll"
+	      Labels		      [0, 0]
+	      SrcBlock		      "Demux"
+	      SrcPort		      12
+	      DstBlock		      "Bus\nCreator"
+	      DstPort		      12
+	    }
+	    Line {
+	      Name		      "dpitch"
+	      Labels		      [0, 0]
+	      SrcBlock		      "Demux"
+	      SrcPort		      11
+	      DstBlock		      "Bus\nCreator"
+	      DstPort		      11
+	    }
+	    Line {
+	      Name		      "dyaw"
+	      Labels		      [0, 0]
+	      SrcBlock		      "Demux"
+	      SrcPort		      10
+	      DstBlock		      "Bus\nCreator"
+	      DstPort		      10
+	    }
+	    Line {
+	      SrcBlock		      "Dynamics"
+	      SrcPort		      1
+	      DstBlock		      "Demux"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Bus\nCreator"
+	      SrcPort		      1
+	      DstBlock		      "X"
+	      DstPort		      1
+	    }
+	    Line {
+	      Name		      "dy"
+	      Labels		      [0, 0]
+	      SrcBlock		      "Demux"
+	      SrcPort		      8
+	      DstBlock		      "Bus\nCreator"
+	      DstPort		      8
+	    }
+	    Line {
+	      Name		      "roll"
+	      Labels		      [0, 0]
+	      SrcBlock		      "Demux"
+	      SrcPort		      6
+	      DstBlock		      "Bus\nCreator"
+	      DstPort		      6
+	    }
+	    Line {
+	      Name		      "Y"
+	      Labels		      [0, 0]
+	      SrcBlock		      "Demux"
+	      SrcPort		      2
+	      DstBlock		      "Bus\nCreator"
+	      DstPort		      2
+	    }
+	    Line {
+	      Name		      "dz"
+	      Labels		      [0, 0]
+	      SrcBlock		      "Demux"
+	      SrcPort		      9
+	      DstBlock		      "Bus\nCreator"
+	      DstPort		      9
+	    }
+	    Line {
+	      Name		      "dx"
+	      Labels		      [0, 0]
+	      SrcBlock		      "Demux"
+	      SrcPort		      7
+	      DstBlock		      "Bus\nCreator"
+	      DstPort		      7
+	    }
+	    Line {
+	      SrcBlock		      "w 4"
+	      SrcPort		      1
+	      DstBlock		      "Mux"
+	      DstPort		      4
+	    }
+	    Line {
+	      SrcBlock		      "w 3"
+	      SrcPort		      1
+	      DstBlock		      "Mux"
+	      DstPort		      3
+	    }
+	    Line {
+	      SrcBlock		      "w 2"
+	      SrcPort		      1
+	      DstBlock		      "Mux"
+	      DstPort		      2
+	    }
+	    Line {
+	      SrcBlock		      "w 1"
+	      SrcPort		      1
+	      DstBlock		      "Mux"
+	      DstPort		      1
+	    }
+	    Line {
+	      Name		      "pitch"
+	      Labels		      [0, 0]
+	      SrcBlock		      "Demux"
+	      SrcPort		      5
+	      DstBlock		      "Bus\nCreator"
+	      DstPort		      5
+	    }
+	    Line {
+	      Name		      "yaw"
+	      Labels		      [0, 0]
+	      SrcBlock		      "Demux"
+	      SrcPort		      4
+	      DstBlock		      "Bus\nCreator"
+	      DstPort		      4
+	    }
+	    Line {
+	      Name		      "Z"
+	      Labels		      [0, 0]
+	      SrcBlock		      "Demux"
+	      SrcPort		      3
+	      DstBlock		      "Bus\nCreator"
+	      DstPort		      3
+	    }
+	    Line {
+	      Name		      "X"
+	      Labels		      [0, 0]
+	      SrcBlock		      "Demux"
+	      SrcPort		      1
+	      DstBlock		      "Bus\nCreator"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Mux"
+	      SrcPort		      1
+	      DstBlock		      "Dynamics"
+	      DstPort		      1
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "RNE"
+	  SID			  "54"
+	  Ports			  [3, 1]
+	  Position		  [230, 91, 290, 169]
+	  BackgroundColor	  "red"
+	  LibraryVersion	  "*1.61"
+	  MinAlgLoopOccurrences	  off
+	  PropExecContextOutsideSubsystem off
+	  RTWSystemCode		  "Auto"
+	  FunctionWithSeparateData off
+	  Opaque		  off
+	  RequestExecContextInheritance	off
+	  MaskHideContents	  off
+	  MaskDescription	  "Rigid-body inverse dynamics."
+	  MaskHelp		  "Given a robot dynamic model and joint angle, rate and acceleration \ndetermine the required joint torq"
+	  "ue.  \n \n<b>Parameters::</b>\n \nrobot (SerialLink) a dynamic model of an N-link serial link manipulator\ngravity "
+	  "(1x3)  IGNORED Gravitational acceleration in world frame [m/s2]\n \n<b>Inputs::</b>\n \nq (1xN) joint coordinates\n"
+	  "qd (1xN) joint coordinate velocity\nqdd (1xN) joint coordinate acceleration\n\n \n<b>Outputs::</b>\n \nQ (1xN) the "
+	  "generalized joint force (torque or force) required to achieve\nthe motion state (q, qd, qdd).\n \n<b>Notes::</b>\n "
+	  "\n- Required for computed and inverse torque control schemes.\n- The gravity parameter is ignored.\n- Implemented u"
+	  "sing the recursive Newton-Euler scheme (RNE).\n- A wrapper for the Toolbox method rne().\n\n"
+	  MaskPromptString	  "Robot object|Gravity"
+	  MaskStyleString	  "edit,edit"
+	  MaskVariables		  "robot=@1;grav=@2;"
+	  MaskTunableValueString  "on,on"
+	  MaskCallbackString	  "|"
+	  MaskEnableString	  "on,on"
+	  MaskVisibilityString	  "on,on"
+	  MaskToolTipString	  "on,on"
+	  MaskInitialization	  "if isa(robot, 'SerialLink')\n    n = robot.n\n    rname = robot.name;\nelse\n    n = 0;\n    "
+	  "rname = '';\nend"
+	  MaskDisplay		  "port_label('output', 1, 'Q')\nport_label('input', 1, 'q')\nport_label('input', 2, 'qd')\nport_label"
+	  "('input', 3, 'qdd')\ntext(0.9, 0.9,  rname, 'horizontalAlignment', 'right')\n"
+	  MaskIconFrame		  on
+	  MaskIconOpaque	  on
+	  MaskIconRotate	  "none"
+	  MaskPortRotate	  "default"
+	  MaskIconUnits		  "normalized"
+	  MaskValueString	  "robot|[0 0 9.81]"
+	  System {
+	    Name		    "RNE"
+	    Location		    [1314, 296, 1806, 447]
+	    Open		    off
+	    ModelBrowserVisibility  off
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "A4"
+	    PaperUnits		    "centimeters"
+	    TiledPaperMargins	    [1.270000, 1.270000, 1.270000, 1.270000]
+	    TiledPageScale	    1
+	    ShowPageBoundaries	    off
+	    ZoomFactor		    "100"
+	    SIDHighWatermark	    "245"
+	    SIDPrevWatermark	    "245"
+	    Block {
+	      BlockType		      Inport
+	      Name		      "q"
+	      SID		      "54:240"
+	      Position		      [20, 33, 50, 47]
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "qd"
+	      SID		      "54:241"
+	      Position		      [20, 73, 50, 87]
+	      Port		      "2"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "qdd"
+	      SID		      "54:242"
+	      Position		      [15, 113, 45, 127]
+	      Port		      "3"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      MATLABFcn
+	      Name		      "MATLAB Fcn"
+	      SID		      "54:243"
+	      Ports		      [1, 1]
+	      Position		      [120, 66, 295, 94]
+	      MATLABFcn		      "rne(robot, u(1:n)', u(n+1:2*n)', u(2*n+1:3*n)')"
+	      OutputDimensions	      "robot.n"
+	    }
+	    Block {
+	      BlockType		      Mux
+	      Name		      "Mux"
+	      SID		      "54:244"
+	      Ports		      [3, 1]
+	      Position		      [85, 21, 90, 139]
+	      ShowName		      off
+	      Inputs		      "3"
+	      DisplayOption	      "bar"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "Q"
+	      SID		      "54:245"
+	      Position		      [370, 73, 400, 87]
+	      IconDisplay	      "Port number"
+	    }
+	    Line {
+	      SrcBlock		      "Mux"
+	      SrcPort		      1
+	      DstBlock		      "MATLAB Fcn"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "q"
+	      SrcPort		      1
+	      DstBlock		      "Mux"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "qd"
+	      SrcPort		      1
+	      DstBlock		      "Mux"
+	      DstPort		      2
+	    }
+	    Line {
+	      SrcBlock		      "qdd"
+	      SrcPort		      1
+	      DstBlock		      "Mux"
+	      DstPort		      3
+	    }
+	    Line {
+	      SrcBlock		      "MATLAB Fcn"
+	      SrcPort		      1
+	      DstBlock		      "Q"
+	      DstPort		      1
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "Robot"
+	  SID			  "55"
+	  Ports			  [1, 3]
+	  Position		  [105, 92, 180, 168]
+	  BackgroundColor	  "red"
+	  DropShadow		  on
+	  LibraryVersion	  "1.61"
+	  MinAlgLoopOccurrences	  off
+	  PropExecContextOutsideSubsystem off
+	  RTWSystemCode		  "Auto"
+	  FunctionWithSeparateData off
+	  Opaque		  off
+	  RequestExecContextInheritance	off
+	  MaskHideContents	  off
+	  MaskDescription	  "Rigid-body dynamic model of robot."
+	  MaskHelp		  "Simulates the forward (direct) rigid-body dynamics of the robot described \nby the given robot object."
+	  "  For given applied joint torque/force it computes\nthe instaneous joint coordinates, velocities and acclerations.\n"
+	  "\n \n<b>Parameters::</b>\n \nrobot (SerialLink) a dynamic model of an N-link serial link manipulator\nq0 (1xN)  Ini"
+	  "tial joint coordinates\n \n<b>Inputs::</b>\n \nQ (1xN) the generalized joint force (torque or force) required to ac"
+	  "hieve\nthe motion state (q, qd, qdd).\n \n<b>Outputs::</b>\n\nq (1xN) joint coordinates\nqd (1xN) joint coordinate "
+	  "velocity\nqdd (1xN) joint coordinate acceleration\n\n \n<b>Notes::</b>\n \n- Required to simulate robot rigid body "
+	  "motion.\n- Implemented using the recursive Newton-Euler scheme (RNE).\n- A wrapper for the Toolbox method accel() w"
+	  "hich in turn depends on the\n  method rne().\n\n"
+	  MaskPromptString	  "Robot object|Initial state"
+	  MaskStyleString	  "edit,edit"
+	  MaskVariables		  "robot=@1;q0=@2;"
+	  MaskTunableValueString  "on,on"
+	  MaskCallbackString	  "|"
+	  MaskEnableString	  "on,on"
+	  MaskVisibilityString	  "on,on"
+	  MaskToolTipString	  "on,on"
+	  MaskInitialization	  "if isa(robot, 'SerialLink')\n    rname = robot.name;\n    %fprintf('**robot name is %s\\n', r"
+	  "name);\nelse\n    rname = '';\n    n = 0\nend\n"
+	  MaskDisplay		  "port_label('input', 1, 'Q')\nport_label('output', 1, 'q')\nport_label('output', 2, 'qd')\nport_labe"
+	  "l('output', 3, 'qdd')\ntext(0.1, 0.9,  rname, 'horizontalAlignment', 'left')\n"
+	  MaskIconFrame		  on
+	  MaskIconOpaque	  on
+	  MaskIconRotate	  "none"
+	  MaskPortRotate	  "default"
+	  MaskIconUnits		  "normalized"
+	  MaskValueString	  "robot|[0 0 0 0 0 0]"
+	  System {
+	    Name		    "Robot"
+	    Location		    [280, 398, 812, 626]
+	    Open		    off
+	    ModelBrowserVisibility  off
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "A4"
+	    PaperUnits		    "centimeters"
+	    TiledPaperMargins	    [1.270000, 1.270000, 1.270000, 1.270000]
+	    TiledPageScale	    1
+	    ShowPageBoundaries	    off
+	    ZoomFactor		    "100"
+	    SIDHighWatermark	    "232"
+	    SIDPrevWatermark	    "232"
+	    Block {
+	      BlockType		      Inport
+	      Name		      "Q"
+	      SID		      "55:225"
+	      Position		      [20, 98, 50, 112]
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Integrator
+	      Name		      "Integrator"
+	      SID		      "55:246"
+	      Ports		      [1, 1]
+	      Position		      [265, 65, 295, 95]
+	      ShowName		      off
+	      Port {
+		PortNumber		1
+		Name			"qd"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	    }
+	    Block {
+	      BlockType		      Integrator
+	      Name		      "Integrator1"
+	      SID		      "55:247"
+	      Ports		      [1, 1]
+	      Position		      [345, 65, 375, 95]
+	      ShowName		      off
+	    }
+	    Block {
+	      BlockType		      Mux
+	      Name		      "Mux"
+	      SID		      "55:248"
+	      Ports		      [3, 1]
+	      Position		      [105, 44, 115, 116]
+	      ShowName		      off
+	      Inputs		      "3"
+	      DisplayOption	      "bar"
+	    }
+	    Block {
+	      BlockType		      S-Function
+	      Name		      "S-Function"
+	      SID		      "55:229"
+	      Ports		      [1, 1]
+	      Position		      [150, 65, 210, 95]
+	      FunctionName	      "slaccel"
+	      Parameters	      "robot"
+	      EnableBusSupport	      off
+	      Port {
+		PortNumber		1
+		Name			"qdd"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "q"
+	      SID		      "55:230"
+	      Position		      [440, 73, 470, 87]
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "qd"
+	      SID		      "55:231"
+	      Position		      [440, 128, 470, 142]
+	      Port		      "2"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "qdd"
+	      SID		      "55:232"
+	      Position		      [440, 173, 470, 187]
+	      Port		      "3"
+	      IconDisplay	      "Port number"
+	    }
+	    Line {
+	      SrcBlock		      "Integrator1"
+	      SrcPort		      1
+	      Points		      [25, 0]
+	      Branch {
+		Points			[0, -60; -325, 0; 0, 35]
+		DstBlock		"Mux"
+		DstPort			1
+	      }
+	      Branch {
+		DstBlock		"q"
+		DstPort			1
+	      }
+	    }
+	    Line {
+	      SrcBlock		      "Q"
+	      SrcPort		      1
+	      DstBlock		      "Mux"
+	      DstPort		      3
+	    }
+	    Line {
+	      Name		      "qd"
+	      Labels		      [0, 0]
+	      SrcBlock		      "Integrator"
+	      SrcPort		      1
+	      Points		      [30, 0]
+	      Branch {
+		Points			[0, -50; -285, 0; 0, 50]
+		DstBlock		"Mux"
+		DstPort			2
+	      }
+	      Branch {
+		DstBlock		"Integrator1"
+		DstPort			1
+	      }
+	      Branch {
+		Points			[0, 55]
+		DstBlock		"qd"
+		DstPort			1
+	      }
+	    }
+	    Line {
+	      SrcBlock		      "Mux"
+	      SrcPort		      1
+	      DstBlock		      "S-Function"
+	      DstPort		      1
+	    }
+	    Line {
+	      Name		      "qdd"
+	      Labels		      [0, 0]
+	      SrcBlock		      "S-Function"
+	      SrcPort		      1
+	      Points		      [35, 0]
+	      Branch {
+		DstBlock		"Integrator"
+		DstPort			1
+	      }
+	      Branch {
+		Points			[0, 100]
+		DstBlock		"qdd"
+		DstPort			1
+	      }
+	    }
+	  }
+	}
+	Annotation {
+	  SID			  "145"
+	  Name			  "\nDynamics  \n "
+	  Position		  [47, 27]
+	  BackgroundColor	  "cyan"
+	  FontSize		  18
+	}
+	Annotation {
+	  SID			  "146"
+	  Name			  "Arm-type robot"
+	  Position		  [55, 100]
+	  ForegroundColor	  "orange"
+	}
+	Annotation {
+	  SID			  "147"
+	  Name			  "Quadrotor"
+	  Position		  [41, 336]
+	  ForegroundColor	  "orange"
+	}
+	Annotation {
+	  SID			  "148"
+	  Name			  "Mobile robot"
+	  Position		  [49, 214]
+	  ForegroundColor	  "orange"
+	}
+	Annotation {
+	  SID			  "149"
+	  Name			  "Robotics Toolbox for MATLAB"
+	  Position		  [116, 17]
+	  HorizontalAlignment	  "left"
+	  FontSize		  12
+	  FontWeight		  "bold"
+	}
+      }
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "Kinematics"
+      SID		      "249"
+      Ports		      []
+      Position		      [154, 128, 260, 170]
+      BackgroundColor	      "darkGreen"
+      ShowName		      off
+      LibraryVersion	      "*1.3"
+      MinAlgLoopOccurrences   off
+      PropExecContextOutsideSubsystem off
+      RTWSystemCode	      "Auto"
+      FunctionWithSeparateData off
+      Opaque		      off
+      RequestExecContextInheritance off
+      MaskHideContents	      off
+      MaskDisplay	      "color('darkBlue')\ndisp('Kinematics')"
+      MaskIconFrame	      on
+      MaskIconOpaque	      on
+      MaskIconRotate	      "none"
+      MaskPortRotate	      "default"
+      MaskIconUnits	      "pixels"
+      System {
+	Name			"Kinematics"
+	Location		[1014, 175, 1391, 605]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"A4"
+	PaperUnits		"centimeters"
+	TiledPaperMargins	[1.270000, 1.270000, 1.270000, 1.270000]
+	TiledPageScale		1
+	ShowPageBoundaries	off
+	ZoomFactor		"100"
+	SIDHighWatermark	"78"
+	SIDPrevWatermark	"14"
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "fkine"
+	  SID			  "249:22"
+	  Ports			  [1, 1]
+	  Position		  [80, 84, 145, 146]
+	  BackgroundColor	  "red"
+	  LibraryVersion	  "*1.61"
+	  MinAlgLoopOccurrences	  off
+	  PropExecContextOutsideSubsystem off
+	  RTWSystemCode		  "Auto"
+	  FunctionWithSeparateData off
+	  Opaque		  off
+	  RequestExecContextInheritance	off
+	  MaskHideContents	  off
+	  MaskDescription	  "Robot forward kinematics."
+	  MaskHelp		  "Compute homogeneous transform for robot end-effector given joint coordinates\n\n\n<b>Parameters::</b>\n"
+	  " \nRobot (SerialLink class)  The N-axis robot object for computing forward kinematics.\n \n<b>Inputs::</b>\n \nq (1"
+	  "xN) joint coordinates\n \n<b>Outputs::</b>\n \nT (4x4) the pose of the end effector as a homogeneous transformation"
+	  "\n \n<b>Notes::</b>\n \n- A wrapper for the Toolbox method fkine().\n"
+	  MaskPromptString	  "Robot object"
+	  MaskStyleString	  "edit"
+	  MaskVariables		  "robot=@1;"
+	  MaskTunableValueString  "on"
+	  MaskEnableString	  "on"
+	  MaskVisibilityString	  "on"
+	  MaskToolTipString	  "on"
+	  MaskDisplay		  "port_label('input', 1, 'q')\nport_label('output', 1, 'T')\nif ~isempty(robot)\n    text(0.5, 0.2, r"
+	  "obot.name,  'horizontalAlignment', 'center')\nend\n"
+	  MaskIconFrame		  on
+	  MaskIconOpaque	  on
+	  MaskIconRotate	  "none"
+	  MaskPortRotate	  "default"
+	  MaskIconUnits		  "normalized"
+	  MaskValueString	  "robot"
+	  System {
+	    Name		    "fkine"
+	    Location		    [533, 523, 897, 672]
+	    Open		    off
+	    ModelBrowserVisibility  off
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "A4"
+	    PaperUnits		    "centimeters"
+	    TiledPaperMargins	    [1.270000, 1.270000, 1.270000, 1.270000]
+	    TiledPageScale	    1
+	    ShowPageBoundaries	    off
+	    ZoomFactor		    "100"
+	    SIDHighWatermark	    "225"
+	    SIDPrevWatermark	    "225"
+	    Block {
+	      BlockType		      Inport
+	      Name		      "q"
+	      SID		      "249:22:69"
+	      Position		      [55, 68, 85, 82]
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      MATLABFcn
+	      Name		      "MATLAB Fcn"
+	      SID		      "249:22:70"
+	      Ports		      [1, 1]
+	      Position		      [120, 60, 180, 90]
+	      MATLABFcn		      "fkine(robot,u)"
+	      OutputDimensions	      "[4 4]"
+	      Output1D		      off
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "T"
+	      SID		      "249:22:71"
+	      Position		      [225, 68, 255, 82]
+	      IconDisplay	      "Port number"
+	    }
+	    Line {
+	      SrcBlock		      "MATLAB Fcn"
+	      SrcPort		      1
+	      DstBlock		      "T"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "q"
+	      SrcPort		      1
+	      DstBlock		      "MATLAB Fcn"
+	      DstPort		      1
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "ijacob"
+	  SID			  "249:23"
+	  Ports			  [1, 1]
+	  Position		  [285, 185, 340, 255]
+	  BackgroundColor	  "red"
+	  LibraryVersion	  "1.61"
+	  MinAlgLoopOccurrences	  off
+	  PropExecContextOutsideSubsystem off
+	  RTWSystemCode		  "Auto"
+	  FunctionWithSeparateData off
+	  Opaque		  off
+	  RequestExecContextInheritance	off
+	  MaskHideContents	  off
+	  MaskDescription	  "Inverse Jacobian\n"
+	  MaskHelp		  "Inverse of Jacobian matrix which maps spatial velocity to joint coordinate\nrates.\n\n\n<b>Inputs::</b"
+	  ">\n \nJ (6x6) the Jacobian matrix\n \n<b>Outputs::</b>\n \nJi (6x6) the inverse Jacobian matrix\n \n<b>Notes::</b>\n"
+	  " \n- A wrapper for the MATLAB function inv().\n- Only valid for square Jacobians (6-axis robots)\n"
+	  MaskDisplay		  "text(0.4, 0.7, '\\bf\\fontsize{16}J', 'texmode', 'on', 'verticalAlignment', 'top', 'horizontalAlign"
+	  "ment', 'left')\ntext(0.6, 0.65, '\\fontsize{10}-1', 'texmode', 'on','verticalAlignment', 'bottom', 'horizontalAlign"
+	  "ment', 'left')\nport_label('input', 1, 'J');\nport_label('output', 1, 'Ji')\n"
+	  MaskIconFrame		  on
+	  MaskIconOpaque	  on
+	  MaskIconRotate	  "none"
+	  MaskPortRotate	  "default"
+	  MaskIconUnits		  "normalized"
+	  System {
+	    Name		    "ijacob"
+	    Location		    [236, 485, 600, 634]
+	    Open		    off
+	    ModelBrowserVisibility  off
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "A4"
+	    PaperUnits		    "centimeters"
+	    TiledPaperMargins	    [1.270000, 1.270000, 1.270000, 1.270000]
+	    TiledPageScale	    1
+	    ShowPageBoundaries	    off
+	    ZoomFactor		    "100"
+	    SIDHighWatermark	    "225"
+	    SIDPrevWatermark	    "225"
+	    Block {
+	      BlockType		      Inport
+	      Name		      "J"
+	      SID		      "249:23:73"
+	      Position		      [20, 33, 50, 47]
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      MATLABFcn
+	      Name		      "inverse\njacobian"
+	      SID		      "249:23:74"
+	      Ports		      [1, 1]
+	      Position		      [110, 25, 170, 55]
+	      MATLABFcn		      "inv(u)"
+	      Output1D		      off
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "Ji"
+	      SID		      "249:23:75"
+	      Position		      [220, 33, 250, 47]
+	      IconDisplay	      "Port number"
+	    }
+	    Line {
+	      SrcBlock		      "J"
+	      SrcPort		      1
+	      DstBlock		      "inverse\njacobian"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "inverse\njacobian"
+	      SrcPort		      1
+	      DstBlock		      "Ji"
+	      DstPort		      1
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "ikine"
+	  SID			  "249:250"
+	  Ports			  [1, 1]
+	  Position		  [290, 83, 340, 147]
+	  BackgroundColor	  "red"
+	  MinAlgLoopOccurrences	  off
+	  PropExecContextOutsideSubsystem off
+	  RTWSystemCode		  "Auto"
+	  FunctionWithSeparateData off
+	  Opaque		  off
+	  RequestExecContextInheritance	off
+	  MaskHideContents	  off
+	  MaskDescription	  "Generalized numerical inverse kinematics"
+	  MaskHelp		  "Compute joint coordinates for robot given end-effector pose.\n\n\n<b>Parameters::</b>\n \nRobot (Seria"
+	  "lLink class)  The N-axis robot object for computing forward kinematics.\nInitial q  (1xN)          Initial joint co"
+	  "ordinates for solution\nMask vector (1x6)         Mask vector for underactuated manipulators.\n\n<b>Inputs::</b>\n "
+	  "\nT (4x4) the pose of the end effector as a homogeneous transformation\n\n \n<b>Outputs::</b>\n\nq (1xN) joint coor"
+	  "dinates\n \n<b>Notes::</b>\n \n- A wrapper for the Toolbox method ikine().\n"
+	  MaskPromptString	  "Robot object|Initial q|Mask vector"
+	  MaskStyleString	  "edit,edit,edit"
+	  MaskVariables		  "robot=@1;q0=@2;M=@3;"
+	  MaskTunableValueString  "on,on,on"
+	  MaskCallbackString	  "||"
+	  MaskEnableString	  "on,on,on"
+	  MaskVisibilityString	  "on,on,on"
+	  MaskToolTipString	  "on,on,on"
+	  MaskIconFrame		  on
+	  MaskIconOpaque	  on
+	  MaskIconRotate	  "none"
+	  MaskPortRotate	  "default"
+	  MaskIconUnits		  "autoscale"
+	  MaskValueString	  "0|0|[1 1 1 1 1 1]"
+	  System {
+	    Name		    "ikine"
+	    Location		    [1561, 603, 1791, 685]
+	    Open		    off
+	    ModelBrowserVisibility  off
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "A4"
+	    PaperUnits		    "inches"
+	    TiledPaperMargins	    [0.500000, 0.500000, 0.500000, 0.500000]
+	    TiledPageScale	    1
+	    ShowPageBoundaries	    off
+	    ZoomFactor		    "100"
+	    Block {
+	      BlockType		      Inport
+	      Name		      "T"
+	      SID		      "249:72"
+	      Position		      [25, 33, 55, 47]
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      MATLABFcn
+	      Name		      "ikine"
+	      SID		      "249:251"
+	      Ports		      [1, 1]
+	      Position		      [80, 25, 150, 55]
+	      MATLABFcn		      "robot.ikine(u, q0, m)"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "q"
+	      SID		      "249:252"
+	      Position		      [175, 33, 205, 47]
+	      IconDisplay	      "Port number"
+	    }
+	    Line {
+	      SrcBlock		      "T"
+	      SrcPort		      1
+	      DstBlock		      "ikine"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "ikine"
+	      SrcPort		      1
+	      DstBlock		      "q"
+	      DstPort		      1
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "ikine6s"
+	  SID			  "249:66"
+	  Ports			  [1, 1]
+	  Position		  [190, 84, 240, 146]
+	  BackgroundColor	  "red"
+	  LibraryVersion	  "1.51"
+	  MinAlgLoopOccurrences	  off
+	  PropExecContextOutsideSubsystem off
+	  RTWSystemCode		  "Auto"
+	  FunctionWithSeparateData off
+	  Opaque		  off
+	  RequestExecContextInheritance	off
+	  MaskHideContents	  off
+	  MaskDescription	  "Inverse kinematics for 6-axis spherical robot"
+	  MaskHelp		  "Compute joint coordinates for robot given end-effector pose.\n\n\n<b>Parameters::</b>\n \nRobot (Seria"
+	  "lLink class)  The N-axis robot object for computing forward kinematics.\nConfiguration             Configuration st"
+	  "ring comprised of 'lrudnf'\n \n<b>Inputs::</b>\n \nT (4x4) the pose of the end effector as a homogeneous transforma"
+	  "tion\n\n \n<b>Outputs::</b>\n\nq (1xN) joint coordinates\n \n<b>Notes::</b>\n \n- A wrapper for the Toolbox method "
+	  "ikine6s().\n"
+	  MaskPromptString	  "Robot object|Configuration string"
+	  MaskStyleString	  "edit,edit"
+	  MaskVariables		  "robot=@1;conf=@2;"
+	  MaskTunableValueString  "on,on"
+	  MaskCallbackString	  "|"
+	  MaskEnableString	  "on,on"
+	  MaskVisibilityString	  "on,on"
+	  MaskToolTipString	  "on,on"
+	  MaskIconFrame		  on
+	  MaskIconOpaque	  on
+	  MaskIconRotate	  "none"
+	  MaskPortRotate	  "default"
+	  MaskIconUnits		  "autoscale"
+	  MaskValueString	  "p560|'luf'"
+	  System {
+	    Name		    "ikine6s"
+	    Location		    [1467, 838, 1697, 920]
+	    Open		    off
+	    ModelBrowserVisibility  off
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "A4"
+	    PaperUnits		    "inches"
+	    TiledPaperMargins	    [0.500000, 0.500000, 0.500000, 0.500000]
+	    TiledPageScale	    1
+	    ShowPageBoundaries	    off
+	    ZoomFactor		    "100"
+	    Block {
+	      BlockType		      Inport
+	      Name		      "T"
+	      SID		      "249:67"
+	      Position		      [25, 33, 55, 47]
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      MATLABFcn
+	      Name		      "ikine6s"
+	      SID		      "249:65"
+	      Ports		      [1, 1]
+	      Position		      [80, 25, 150, 55]
+	      MATLABFcn		      "robot.ikine6s(u,conf)"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "q"
+	      SID		      "249:68"
+	      Position		      [175, 33, 205, 47]
+	      IconDisplay	      "Port number"
+	    }
+	    Line {
+	      SrcBlock		      "T"
+	      SrcPort		      1
+	      DstBlock		      "ikine6s"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "ikine6s"
+	      SrcPort		      1
+	      DstBlock		      "q"
+	      DstPort		      1
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "jacob0\n"
+	  SID			  "249:24"
+	  Ports			  [1, 1]
+	  Position		  [80, 186, 140, 254]
+	  BackgroundColor	  "red"
+	  LibraryVersion	  "1.61"
+	  MinAlgLoopOccurrences	  off
+	  PropExecContextOutsideSubsystem off
+	  RTWSystemCode		  "Auto"
+	  FunctionWithSeparateData off
+	  Opaque		  off
+	  RequestExecContextInheritance	off
+	  MaskHideContents	  off
+	  MaskDescription	  "Robot Jacobian in world coordinates"
+	  MaskHelp		  "Jacobian matrix relating joint coordinate rates to end-effector spatial\nvelocity expressed in the wor"
+	  "ld frame.\n\n<b>Parameters::</b>\n \nRobot (SerialLink class)  The N-axis robot object for which the Jacobian is\n "
+	  "                         computed.\n \n<b>Inputs::</b>\n \nq (1xN) joint coordinates\n \n<b>Outputs::</b>\n \nJ (6x"
+	  "N) the Jacobian matrix\n \n<b>Notes::</b>\n \n- A wrapper for the Toolbox method jacob0().\n"
+	  MaskPromptString	  "Robot object"
+	  MaskStyleString	  "edit"
+	  MaskVariables		  "robot=@1;"
+	  MaskTunableValueString  "on"
+	  MaskEnableString	  "on"
+	  MaskVisibilityString	  "on"
+	  MaskToolTipString	  "on"
+	  MaskInitialization	  "n=robot.n;\n"
+	  MaskDisplay		  "text(0.4, 0.7, '\\bf\\fontsize{16}J', 'texmode', 'on', 'verticalAlignment', 'top', 'horizontalAlign"
+	  "ment', 'left')\ntext(0.45, 0.65, '\\fontsize{10}0', 'texmode', 'on','verticalAlignment', 'bottom', 'horizontalAlign"
+	  "ment', 'right')\nif ~isempty(robot)\n    text(0.5, 0.2, robot.name,  'horizontalAlignment', 'center')\nend\nport_la"
+	  "bel('input', 1, 'q')\nport_label('output', 1, 'J')"
+	  MaskIconFrame		  on
+	  MaskIconOpaque	  on
+	  MaskIconRotate	  "none"
+	  MaskPortRotate	  "default"
+	  MaskIconUnits		  "normalized"
+	  MaskValueString	  "robot"
+	  System {
+	    Name		    "jacob0\n"
+	    Location		    [580, 550, 944, 699]
+	    Open		    off
+	    ModelBrowserVisibility  off
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "A4"
+	    PaperUnits		    "centimeters"
+	    TiledPaperMargins	    [1.270000, 1.270000, 1.270000, 1.270000]
+	    TiledPageScale	    1
+	    ShowPageBoundaries	    off
+	    ZoomFactor		    "100"
+	    SIDHighWatermark	    "225"
+	    SIDPrevWatermark	    "225"
+	    Block {
+	      BlockType		      Inport
+	      Name		      "q"
+	      SID		      "249:24:77"
+	      Position		      [20, 33, 50, 47]
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      MATLABFcn
+	      Name		      "MATLAB Fcn"
+	      SID		      "249:24:78"
+	      Ports		      [1, 1]
+	      Position		      [100, 25, 160, 55]
+	      MATLABFcn		      "jacob0(robot,u)"
+	      OutputDimensions	      "[6 n]"
+	      Output1D		      off
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "J"
+	      SID		      "249:24:79"
+	      Position		      [220, 33, 250, 47]
+	      IconDisplay	      "Port number"
+	    }
+	    Line {
+	      SrcBlock		      "q"
+	      SrcPort		      1
+	      DstBlock		      "MATLAB Fcn"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "MATLAB Fcn"
+	      SrcPort		      1
+	      DstBlock		      "J"
+	      DstPort		      1
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "jacobn"
+	  SID			  "249:25"
+	  Ports			  [1, 1]
+	  Position		  [180, 186, 235, 254]
+	  BackgroundColor	  "red"
+	  LibraryVersion	  "1.61"
+	  MinAlgLoopOccurrences	  off
+	  PropExecContextOutsideSubsystem off
+	  RTWSystemCode		  "Auto"
+	  FunctionWithSeparateData off
+	  Opaque		  off
+	  RequestExecContextInheritance	off
+	  MaskHideContents	  off
+	  MaskDescription	  "Robot Jacobian in end-effector coordinates"
+	  MaskHelp		  "Jacobian matrix relating joint coordinate rates to end-effector spatial\nvelocity expressed in the end"
+	  "-effector frame.\n\n<b>Parameters::</b>\n \nRobot (SerialLink class)  The N-axis robot object for which the Jacobia"
+	  "n is\n                          computed.\n \n<b>Inputs::</b>\n \nq (1xN) joint coordinates\n \n<b>Outputs::</b>\n "
+	  "\nJ (6xN) the Jacobian matrix\n \n<b>Notes::</b>\n \n- A wrapper for the Toolbox method jacobn().\n"
+	  MaskPromptString	  "Robot object"
+	  MaskStyleString	  "edit"
+	  MaskVariables		  "robot=@1;"
+	  MaskTunableValueString  "on"
+	  MaskEnableString	  "on"
+	  MaskVisibilityString	  "on"
+	  MaskToolTipString	  "on"
+	  MaskInitialization	  "n=robot.n;"
+	  MaskDisplay		  "text(0.4, 0.7, '\\bf\\fontsize{16}J', 'texmode', 'on', 'verticalAlignment', 'top', 'horizontalAlign"
+	  "ment', 'left')\ntext(0.45, 0.65, '\\fontsize{10}N', 'texmode', 'on','verticalAlignment', 'bottom', 'horizontalAlign"
+	  "ment', 'right')\nif ~isempty(robot)\n    text(0.5, 0.2, robot.name,  'horizontalAlignment', 'center')\nend\nport_la"
+	  "bel('input', 1, 'q')\nport_label('output', 1, 'J')"
+	  MaskIconFrame		  on
+	  MaskIconOpaque	  on
+	  MaskIconRotate	  "none"
+	  MaskPortRotate	  "default"
+	  MaskIconUnits		  "normalized"
+	  MaskValueString	  "robot"
+	  System {
+	    Name		    "jacobn"
+	    Location		    [167, 513, 531, 662]
+	    Open		    off
+	    ModelBrowserVisibility  off
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "A4"
+	    PaperUnits		    "centimeters"
+	    TiledPaperMargins	    [1.270000, 1.270000, 1.270000, 1.270000]
+	    TiledPageScale	    1
+	    ShowPageBoundaries	    off
+	    ZoomFactor		    "100"
+	    SIDHighWatermark	    "225"
+	    SIDPrevWatermark	    "225"
+	    Block {
+	      BlockType		      Inport
+	      Name		      "q"
+	      SID		      "249:25:81"
+	      Position		      [20, 33, 50, 47]
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      MATLABFcn
+	      Name		      "MATLAB Fcn"
+	      SID		      "249:25:82"
+	      Ports		      [1, 1]
+	      Position		      [100, 25, 160, 55]
+	      MATLABFcn		      "jacobn(robot,u)"
+	      OutputDimensions	      "[6 n]"
+	      Output1D		      off
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "J"
+	      SID		      "249:25:83"
+	      Position		      [220, 33, 250, 47]
+	      IconDisplay	      "Port number"
+	    }
+	    Line {
+	      SrcBlock		      "q"
+	      SrcPort		      1
+	      DstBlock		      "MATLAB Fcn"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "MATLAB Fcn"
+	      SrcPort		      1
+	      DstBlock		      "J"
+	      DstPort		      1
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "pose integral"
+	  SID			  "249:58"
+	  Ports			  [1, 1]
+	  Position		  [180, 293, 250, 347]
+	  BackgroundColor	  "red"
+	  DropShadow		  on
+	  LibraryVersion	  "1.61"
+	  MinAlgLoopOccurrences	  off
+	  PropExecContextOutsideSubsystem off
+	  RTWSystemCode		  "Auto"
+	  FunctionWithSeparateData off
+	  Opaque		  off
+	  RequestExecContextInheritance	off
+	  MaskHideContents	  off
+	  MaskDescription	  "Integrate spatial velocity"
+	  MaskHelp		  "Integrate spatial velocity to update pose represented as a homogeneous\ntransformation.\n\n<b>Paramete"
+	  "rs::</b>\n\nT0 (4x4)  The initial pose\ndt (1x1)  The sample interval [s]\n\n<b>Inputs::</b>\n\nv (1x6) spatial vel"
+	  "ocity (xd yd zd wx wy wz)\n\n<b>Outputs::</b>\n\nT (4x4) the integrated pose as a homogeneous transformation\n\n<b>"
+	  "Notes::</b>\n\n- Contains a unit delay of dt\n- The transform is kept normalized using trnorm().\n"
+	  MaskPromptString	  "Initial pose (hom transform)|Sample interval (s)"
+	  MaskStyleString	  "edit,edit"
+	  MaskVariables		  "T0=@1;dt=@2;"
+	  MaskTunableValueString  "on,on"
+	  MaskCallbackString	  "|"
+	  MaskEnableString	  "on,on"
+	  MaskVisibilityString	  "on,on"
+	  MaskToolTipString	  "on,on"
+	  MaskIconFrame		  on
+	  MaskIconOpaque	  on
+	  MaskIconRotate	  "none"
+	  MaskPortRotate	  "default"
+	  MaskIconUnits		  "autoscale"
+	  MaskValueString	  "transl(1,1,-3)*trotx(0.2)|0.02"
+	  System {
+	    Name		    "pose integral"
+	    Location		    [362, 525, 941, 768]
+	    Open		    off
+	    ModelBrowserVisibility  off
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "A4"
+	    PaperUnits		    "inches"
+	    TiledPaperMargins	    [0.500000, 0.500000, 0.500000, 0.500000]
+	    TiledPageScale	    1
+	    ShowPageBoundaries	    off
+	    ZoomFactor		    "100"
+	    Block {
+	      BlockType		      Inport
+	      Name		      "v"
+	      SID		      "249:59"
+	      Position		      [25, 33, 55, 47]
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      MATLABFcn
+	      Name		      "MATLAB Fcn3"
+	      SID		      "249:60"
+	      Ports		      [1, 1]
+	      Position		      [80, 25, 140, 55]
+	      MATLABFcn		      "delta2tr(u)"
+	      Output1D		      off
+	    }
+	    Block {
+	      BlockType		      Product
+	      Name		      "Product"
+	      SID		      "249:61"
+	      Ports		      [2, 1]
+	      Position		      [195, 29, 225, 76]
+	      Multiplication	      "Matrix(*)"
+	      InputSameDT	      off
+	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+	      SaturateOnIntegerOverflow	off
+	    }
+	    Block {
+	      BlockType		      UnitDelay
+	      Name		      "Unit Delay"
+	      SID		      "249:62"
+	      Position		      [345, 33, 380, 67]
+	      X0		      "T0"
+	      SampleTime	      "dt"
+	    }
+	    Block {
+	      BlockType		      MATLABFcn
+	      Name		      "trnorm"
+	      SID		      "249:63"
+	      Ports		      [1, 1]
+	      Position		      [250, 35, 310, 65]
+	      MATLABFcn		      "trnorm(u)"
+	      Output1D		      off
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "T"
+	      SID		      "249:64"
+	      Position		      [435, 43, 465, 57]
+	      IconDisplay	      "Port number"
+	    }
+	    Line {
+	      SrcBlock		      "v"
+	      SrcPort		      1
+	      DstBlock		      "MATLAB Fcn3"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "trnorm"
+	      SrcPort		      1
+	      DstBlock		      "Unit Delay"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "MATLAB Fcn3"
+	      SrcPort		      1
+	      DstBlock		      "Product"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Unit Delay"
+	      SrcPort		      1
+	      Points		      [30, 0]
+	      Branch {
+		DstBlock		"T"
+		DstPort			1
+	      }
+	      Branch {
+		Points			[0, 50; -245, 0; 0, -35]
+		DstBlock		"Product"
+		DstPort			2
+	      }
+	    }
+	    Line {
+	      SrcBlock		      "Product"
+	      SrcPort		      1
+	      Points		      [0, -5]
+	      DstBlock		      "trnorm"
+	      DstPort		      1
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "tr2diff"
+	  SID			  "249:26"
+	  Ports			  [2, 1]
+	  Position		  [80, 290, 125, 345]
+	  BackgroundColor	  "red"
+	  LibraryVersion	  "1.61"
+	  MinAlgLoopOccurrences	  off
+	  PropExecContextOutsideSubsystem off
+	  RTWSystemCode		  "Auto"
+	  FunctionWithSeparateData off
+	  Opaque		  off
+	  RequestExecContextInheritance	off
+	  MaskHideContents	  off
+	  MaskDescription	  "Compute differential motion "
+	  MaskHelp		  "Compute the differential motion (as a 6-vector) between two poses given as\nhomogeneous transformation"
+	  "s.\n \n<b>Inputs::</b>\n \nT1 (4x4) initial pose as a homogeneous transformation \nT2 (4x4) final pose as a homogen"
+	  "eous transformation \n \n<b>Outputs::</b>\n \ndx (1x6) the differential motion (dx dy dz dwx dwy dwz)\n \n<b>Notes:"
+	  ":</b>\n\n- Only valid for infinitessimal displacements.\n- dx is the integral of a spatial velocity over time.\n- A"
+	  " wrapper for the Toolbox function tr2delta()."
+	  MaskPromptString	  "Robot object"
+	  MaskStyleString	  "edit"
+	  MaskVariables		  "robot=@1;"
+	  MaskTunableValueString  "on"
+	  MaskEnableString	  "on"
+	  MaskVisibilityString	  "on"
+	  MaskToolTipString	  "on"
+	  MaskDisplay		  "port_label('input', 1, 'T1')\nport_label('input', 2, 'T2')\nport_label('output', 1, 'dx')\n\n"
+	  MaskIconFrame		  on
+	  MaskIconOpaque	  on
+	  MaskIconRotate	  "none"
+	  MaskPortRotate	  "default"
+	  MaskIconUnits		  "normalized"
+	  MaskValueString	  "robot"
+	  System {
+	    Name		    "tr2diff"
+	    Location		    [198, 506, 562, 655]
+	    Open		    off
+	    ModelBrowserVisibility  off
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "A4"
+	    PaperUnits		    "centimeters"
+	    TiledPaperMargins	    [1.270000, 1.270000, 1.270000, 1.270000]
+	    TiledPageScale	    1
+	    ShowPageBoundaries	    off
+	    ZoomFactor		    "100"
+	    SIDHighWatermark	    "225"
+	    SIDPrevWatermark	    "225"
+	    Block {
+	      BlockType		      Inport
+	      Name		      "T1"
+	      SID		      "249:26:111"
+	      Position		      [45, 38, 75, 52]
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "T2"
+	      SID		      "249:26:112"
+	      Position		      [45, 93, 75, 107]
+	      Port		      "2"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      MATLABFcn
+	      Name		      "MATLAB Fcn"
+	      SID		      "249:26:113"
+	      Ports		      [1, 1]
+	      Position		      [215, 40, 275, 70]
+	      MATLABFcn		      "tr2delta(reshape(u(1:16),4,4), reshape(u(17:32),4,4))"
+	      OutputDimensions	      "6"
+	    }
+	    Block {
+	      BlockType		      Mux
+	      Name		      "Mux"
+	      SID		      "249:26:114"
+	      Ports		      [2, 1]
+	      Position		      [185, 36, 190, 74]
+	      ShowName		      off
+	      Inputs		      "2"
+	      DisplayOption	      "bar"
+	    }
+	    Block {
+	      BlockType		      Reshape
+	      Name		      "Reshape"
+	      SID		      "249:26:115"
+	      Ports		      [1, 1]
+	      Position		      [115, 33, 145, 57]
+	    }
+	    Block {
+	      BlockType		      Reshape
+	      Name		      "Reshape1"
+	      SID		      "249:26:116"
+	      Ports		      [1, 1]
+	      Position		      [125, 88, 155, 112]
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "dx"
+	      SID		      "249:26:117"
+	      Position		      [300, 48, 330, 62]
+	      IconDisplay	      "Port number"
+	    }
+	    Line {
+	      SrcBlock		      "Reshape1"
+	      SrcPort		      1
+	      Points		      [10, 0]
+	      DstBlock		      "Mux"
+	      DstPort		      2
+	    }
+	    Line {
+	      SrcBlock		      "Reshape"
+	      SrcPort		      1
+	      DstBlock		      "Mux"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Mux"
+	      SrcPort		      1
+	      DstBlock		      "MATLAB Fcn"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "T2"
+	      SrcPort		      1
+	      DstBlock		      "Reshape1"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "T1"
+	      SrcPort		      1
+	      DstBlock		      "Reshape"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "MATLAB Fcn"
+	      SrcPort		      1
+	      DstBlock		      "dx"
+	      DstPort		      1
+	    }
+	  }
+	}
+	Annotation {
+	  SID			  "249:256"
+	  Name			  "\nKinematics  \n "
+	  Position		  [52, 22]
+	  BackgroundColor	  "cyan"
+	  FontSize		  18
+	}
+	Annotation {
+	  SID			  "249:255"
+	  Name			  "Robotics Toolbox for MATLAB"
+	  Position		  [116, 17]
+	  HorizontalAlignment	  "left"
+	  FontSize		  12
+	  FontWeight		  "bold"
+	}
+	Annotation {
+	  SID			  "249:76"
+	  Name			  "Forward\nkinematics"
+	  Position		  [8, 96]
+	  HorizontalAlignment	  "left"
+	  ForegroundColor	  "orange"
+	}
+	Annotation {
+	  SID			  "249:254"
+	  Name			  "Jacobian"
+	  Position		  [31, 191]
+	  ForegroundColor	  "orange"
+	}
+	Annotation {
+	  SID			  "249:253"
+	  Name			  "Spatial\nvelocity"
+	  Position		  [14, 306]
+	  HorizontalAlignment	  "left"
+	  ForegroundColor	  "orange"
+	}
+      }
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "Robot Graphics"
+      SID		      "16"
+      Ports		      []
+      Position		      [15, 60, 122, 103]
+      BackgroundColor	      "darkGreen"
+      ShowName		      off
+      LibraryVersion	      "*1.3"
+      MinAlgLoopOccurrences   off
+      PropExecContextOutsideSubsystem off
+      RTWSystemCode	      "Auto"
+      FunctionWithSeparateData off
+      Opaque		      off
+      RequestExecContextInheritance off
+      MaskHideContents	      off
+      MaskDisplay	      "color('darkBlue')\ndisp('Robot Graphics')"
+      MaskIconFrame	      on
+      MaskIconOpaque	      on
+      MaskIconRotate	      "none"
+      MaskPortRotate	      "default"
+      MaskIconUnits	      "pixels"
+      System {
+	Name			"Robot Graphics"
+	Location		[63, 50, 439, 284]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"A4"
+	PaperUnits		"centimeters"
+	TiledPaperMargins	[1.270000, 1.270000, 1.270000, 1.270000]
+	TiledPageScale		1
+	ShowPageBoundaries	off
+	ZoomFactor		"100"
+	SIDHighWatermark	"193"
+	SIDPrevWatermark	"16"
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "Quadrotor plot"
+	  SID			  "16:18"
+	  Ports			  [1]
+	  Position		  [195, 102, 225, 148]
+	  LibraryVersion	  "1.61"
+	  MinAlgLoopOccurrences	  off
+	  PropExecContextOutsideSubsystem off
+	  RTWSystemCode		  "Auto"
+	  FunctionWithSeparateData off
+	  Opaque		  off
+	  RequestExecContextInheritance	off
+	  MaskHideContents	  off
+	  MaskDescription	  "Animate quadrotor."
+	  MaskHelp		  "This block graphically displays a quadrotor (flying robot).\n\nA new figure is created and A graphical"
+	  " model of a quadrotor is animated \nto a pose specified by the state vector input to the block.  \n\nThe state vect"
+	  "or is [x y z roll pitch yaw] in world coordinates and the\nangles are in radians.\n\nNotes:\n- The dimensions of th"
+	  "e model are currently fixed in the code and cannot\n  be set via a parameter."
+	  MaskPromptString	  "State vector"
+	  MaskStyleString	  "edit"
+	  MaskVariables		  "x=@1;"
+	  MaskTunableValueString  "on"
+	  MaskEnableString	  "on"
+	  MaskVisibilityString	  "on"
+	  MaskToolTipString	  "on"
+	  MaskIconFrame		  on
+	  MaskIconOpaque	  on
+	  MaskIconRotate	  "none"
+	  MaskPortRotate	  "default"
+	  MaskIconUnits		  "autoscale"
+	  MaskValueString	  "0"
+	  System {
+	    Name		    "Quadrotor plot"
+	    Location		    [540, 328, 899, 593]
+	    Open		    off
+	    ModelBrowserVisibility  off
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "A4"
+	    PaperUnits		    "centimeters"
+	    TiledPaperMargins	    [1.270000, 1.270000, 1.270000, 1.270000]
+	    TiledPageScale	    1
+	    ShowPageBoundaries	    off
+	    ZoomFactor		    "100"
+	    SIDHighWatermark	    "230"
+	    SIDPrevWatermark	    "230"
+	    Block {
+	      BlockType		      Inport
+	      Name		      "X"
+	      SID		      "16:18:191"
+	      Position		      [50, 113, 80, 127]
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      BusSelector
+	      Name		      "Bus\nSelector1"
+	      SID		      "16:18:192"
+	      Ports		      [1, 1]
+	      Position		      [110, 101, 115, 139]
+	      ShowName		      off
+	      OutputSignals	      "X,Y,Z,yaw,pitch,roll"
+	      OutputAsBus	      on
+	    }
+	    Block {
+	      BlockType		      S-Function
+	      Name		      "Plotter"
+	      SID		      "16:18:193"
+	      Ports		      [1]
+	      Position		      [155, 105, 215, 135]
+	      FunctionName	      "quadrotor_plot"
+	      Parameters	      "[2,10], 1, 1"
+	      EnableBusSupport	      off
+	    }
+	    Line {
+	      SrcBlock		      "Bus\nSelector1"
+	      SrcPort		      1
+	      DstBlock		      "Plotter"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "X"
+	      SrcPort		      1
+	      DstBlock		      "Bus\nSelector1"
+	      DstPort		      1
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "plot"
+	  SID			  "16:17"
+	  Ports			  [1]
+	  Position		  [55, 97, 135, 153]
+	  BackgroundColor	  "red"
+	  LibraryVersion	  "1.61"
+	  MinAlgLoopOccurrences	  off
+	  PropExecContextOutsideSubsystem off
+	  RTWSystemCode		  "Auto"
+	  FunctionWithSeparateData off
+	  Opaque		  off
+	  RequestExecContextInheritance	off
+	  MaskHideContents	  off
+	  MaskDescription	  "Graphical robot display."
+	  MaskHelp		  "This block graphically displays the passed SerialLink class object.\n\nA new figure is created and the"
+	  " robot is animated (using SerialLink.plot)\nto a pose specified by the joint coordinate vector input to the block w"
+	  "hose\nwidth must match the number of robot joints.\n\nIf the Hold checkbox is ticked then a \"hold\" command is iss"
+	  "ued at initialization\ntime allowing multiple robots to be displayed in the one plot."
+	  MaskPromptString	  "Robot object|Update rate (fps)|Hold"
+	  MaskStyleString	  "edit,edit,checkbox"
+	  MaskVariables		  "robot=@1;fps=@2;holdplot=@3;"
+	  MaskTunableValueString  "off,on,on"
+	  MaskCallbackString	  "\n||"
+	  MaskEnableString	  "on,on,on"
+	  MaskVisibilityString	  "on,on,on"
+	  MaskToolTipString	  "on,on,on"
+	  MaskSelfModifiable	  on
+	  MaskDisplay		  "port_label('input', 1, 'q')\nif ~isempty(robot)\n    text(0.5, 0.2, robot.name,  'horizontalAlignme"
+	  "nt', 'center')\nend\n"
+	  MaskIconFrame		  on
+	  MaskIconOpaque	  on
+	  MaskIconRotate	  "none"
+	  MaskPortRotate	  "default"
+	  MaskIconUnits		  "normalized"
+	  MaskValueString	  "robot|25|on"
+	  System {
+	    Name		    "plot"
+	    Location		    [833, 247, 1098, 329]
+	    Open		    off
+	    ModelBrowserVisibility  off
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "A4"
+	    PaperUnits		    "centimeters"
+	    TiledPaperMargins	    [1.270000, 1.270000, 1.270000, 1.270000]
+	    TiledPageScale	    1
+	    ShowPageBoundaries	    off
+	    ZoomFactor		    "100"
+	    SIDHighWatermark	    "230"
+	    SIDPrevWatermark	    "230"
+	    Block {
+	      BlockType		      Inport
+	      Name		      "q"
+	      SID		      "16:17:94"
+	      Position		      [25, 33, 55, 47]
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      S-Function
+	      Name		      "S-Function"
+	      SID		      "16:17:95"
+	      Ports		      [1]
+	      Position		      [120, 25, 180, 55]
+	      FunctionName	      "slplotbot"
+	      Parameters	      "robot,fps,holdplot"
+	      EnableBusSupport	      off
+	    }
+	    Line {
+	      SrcBlock		      "q"
+	      SrcPort		      1
+	      DstBlock		      "S-Function"
+	      DstPort		      1
+	    }
+	  }
+	}
+	Annotation {
+	  SID			  "16:19"
+	  Name			  "\nRobot\nGraphics  \n "
+	  Position		  [1, 32]
+	  HorizontalAlignment	  "left"
+	  BackgroundColor	  "cyan"
+	  FontSize		  18
+	}
+	Annotation {
+	  SID			  "16:20"
+	  Name			  "Robotics Toolbox for MATLAB"
+	  Position		  [96, 17]
+	  HorizontalAlignment	  "left"
+	  FontSize		  12
+	  FontWeight		  "bold"
+	}
+      }
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "Trajectory"
+      SID		      "257"
+      Ports		      []
+      Position		      [153, 60, 260, 102]
+      BackgroundColor	      "darkGreen"
+      ShowName		      off
+      LibraryVersion	      "1.225"
+      MinAlgLoopOccurrences   off
+      PropExecContextOutsideSubsystem off
+      RTWSystemCode	      "Auto"
+      FunctionWithSeparateData off
+      Opaque		      off
+      RequestExecContextInheritance off
+      MaskHideContents	      off
+      MaskDisplay	      "color('darkBlue')\ndisp('Trajectory')"
+      MaskIconFrame	      on
+      MaskIconOpaque	      on
+      MaskIconRotate	      "none"
+      MaskPortRotate	      "default"
+      MaskIconUnits	      "autoscale"
+      System {
+	Name			"Trajectory"
+	Location		[1108, 115, 1485, 415]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"A4"
+	PaperUnits		"centimeters"
+	TiledPaperMargins	[1.270000, 1.270000, 1.270000, 1.270000]
+	TiledPageScale		1
+	ShowPageBoundaries	off
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "Circle"
+	  SID			  "56"
+	  Ports			  [0, 1]
+	  Position		  [220, 85, 260, 145]
+	  LibraryVersion	  "1.61"
+	  MinAlgLoopOccurrences	  off
+	  PropExecContextOutsideSubsystem off
+	  RTWSystemCode		  "Auto"
+	  FunctionWithSeparateData off
+	  Opaque		  off
+	  RequestExecContextInheritance	off
+	  MaskHideContents	  off
+	  MaskDescription	  "Generate circular trajectory"
+	  MaskHelp		  "Generate circular trajectory in the xy-plane and centred at the origin.\n\n<b>Parameters::</b>\n\nradi"
+	  "us   The radius of the circle [m]\nfreq     The frequency of motion [rev/s]\n\n<b>Output::</b>\n\nxy (1x2) a vector"
+	  " of xy-coordinates at the current simulation time step.\n\n<b>Notes::</b>\n- Motion is at constant velocity around "
+	  "the circle, there is an infinite\n  initial acceleration.\n- The motion continues for the whole simulation."
+	  MaskPromptString	  "Radius|Frequency (rev/s)"
+	  MaskStyleString	  "edit,edit"
+	  MaskVariables		  "radius=@1;freq=@2;"
+	  MaskTunableValueString  "on,on"
+	  MaskCallbackString	  "|"
+	  MaskEnableString	  "on,on"
+	  MaskVisibilityString	  "on,on"
+	  MaskToolTipString	  "on,on"
+	  MaskIconFrame		  on
+	  MaskIconOpaque	  on
+	  MaskIconRotate	  "none"
+	  MaskPortRotate	  "default"
+	  MaskIconUnits		  "autoscale"
+	  MaskValueString	  "1|0.2"
+	  System {
+	    Name		    "Circle"
+	    Location		    [10, 249, 502, 498]
+	    Open		    off
+	    ModelBrowserVisibility  off
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "A4"
+	    PaperUnits		    "centimeters"
+	    TiledPaperMargins	    [1.270000, 1.270000, 1.270000, 1.270000]
+	    TiledPageScale	    1
+	    ShowPageBoundaries	    off
+	    ZoomFactor		    "100"
+	    SIDHighWatermark	    "225"
+	    SIDPrevWatermark	    "225"
+	    Block {
+	      BlockType		      Clock
+	      Name		      "Clock"
+	      SID		      "56:258"
+	      Position		      [25, 35, 45, 55]
+	    }
+	    Block {
+	      BlockType		      Mux
+	      Name		      "Mux"
+	      SID		      "56:259"
+	      Ports		      [2, 1]
+	      Position		      [230, 29, 240, 91]
+	      ShowName		      off
+	      Inputs		      "2"
+	      DisplayOption	      "bar"
+	    }
+	    Block {
+	      BlockType		      Product
+	      Name		      "Product1"
+	      SID		      "56:260"
+	      Ports		      [2, 1]
+	      Position		      [280, 52, 310, 83]
+	      ShowName		      off
+	      InputSameDT	      off
+	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+	      SaturateOnIntegerOverflow	off
+	    }
+	    Block {
+	      BlockType		      Trigonometry
+	      Name		      "Trigonometric\nFunction1"
+	      SID		      "56:261"
+	      Ports		      [1, 1]
+	      Position		      [155, 30, 185, 60]
+	      ShowName		      off
+	      Operator		      "cos"
+	    }
+	    Block {
+	      BlockType		      Trigonometry
+	      Name		      "Trigonometric\nFunction3"
+	      SID		      "56:21"
+	      Ports		      [1, 1]
+	      Position		      [155, 90, 185, 120]
+	      ShowName		      off
+	    }
+	    Block {
+	      BlockType		      Gain
+	      Name		      "freq"
+	      SID		      "56:262"
+	      Position		      [70, 30, 95, 60]
+	      Gain		      "freq*2*pi"
+	      ParamDataTypeStr	      "Inherit: Inherit via internal rule"
+	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+	      SaturateOnIntegerOverflow	off
+	    }
+	    Block {
+	      BlockType		      Constant
+	      Name		      "radius"
+	      SID		      "56:263"
+	      Position		      [185, 185, 215, 215]
+	      Value		      "radius"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "xy"
+	      SID		      "56:264"
+	      Position		      [335, 63, 365, 77]
+	      IconDisplay	      "Port number"
+	    }
+	    Line {
+	      SrcBlock		      "Trigonometric\nFunction3"
+	      SrcPort		      1
+	      Points		      [25, 0]
+	      DstBlock		      "Mux"
+	      DstPort		      2
+	    }
+	    Line {
+	      SrcBlock		      "Trigonometric\nFunction1"
+	      SrcPort		      1
+	      DstBlock		      "Mux"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Mux"
+	      SrcPort		      1
+	      DstBlock		      "Product1"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "radius"
+	      SrcPort		      1
+	      Points		      [45, 0]
+	      DstBlock		      "Product1"
+	      DstPort		      2
+	    }
+	    Line {
+	      SrcBlock		      "Clock"
+	      SrcPort		      1
+	      DstBlock		      "freq"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Product1"
+	      SrcPort		      1
+	      DstBlock		      "xy"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "freq"
+	      SrcPort		      1
+	      Points		      [25, 0]
+	      Branch {
+		DstBlock		"Trigonometric\nFunction1"
+		DstPort			1
+	      }
+	      Branch {
+		Points			[0, 60]
+		DstBlock		"Trigonometric\nFunction3"
+		DstPort			1
+	      }
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "angdiff"
+	  SID			  "57"
+	  Ports			  [2, 1]
+	  Position		  [55, 222, 75, 273]
+	  LibraryVersion	  "1.61"
+	  MinAlgLoopOccurrences	  off
+	  PropExecContextOutsideSubsystem off
+	  RTWSystemCode		  "Auto"
+	  FunctionWithSeparateData off
+	  Opaque		  off
+	  RequestExecContextInheritance	off
+	  MaskHideContents	  off
+	  MaskDescription	  "Difference of angles"
+	  MaskHelp		  "A difference block for angles and the result is guaranteed to be in the\ninterval [-pi +pi).\n\n<b>Not"
+	  "es::</b>\n- Is a wrapper for the Toolbox function angdiff."
+	  MaskIconFrame		  on
+	  MaskIconOpaque	  on
+	  MaskIconRotate	  "none"
+	  MaskPortRotate	  "default"
+	  MaskIconUnits		  "autoscale"
+	  System {
+	    Name		    "angdiff"
+	    Location		    [95, 232, 445, 427]
+	    Open		    off
+	    ModelBrowserVisibility  off
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "A4"
+	    PaperUnits		    "centimeters"
+	    TiledPaperMargins	    [1.270000, 1.270000, 1.270000, 1.270000]
+	    TiledPageScale	    1
+	    ShowPageBoundaries	    off
+	    ZoomFactor		    "100"
+	    SIDHighWatermark	    "225"
+	    SIDPrevWatermark	    "225"
+	    Block {
+	      BlockType		      Inport
+	      Name		      "+"
+	      SID		      "57:265"
+	      Position		      [35, 73, 65, 87]
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "-"
+	      SID		      "57:266"
+	      Position		      [35, 113, 65, 127]
+	      Port		      "2"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      MATLABFcn
+	      Name		      "MATLAB Fcn"
+	      SID		      "57:267"
+	      Ports		      [1, 1]
+	      Position		      [175, 75, 235, 105]
+	      MATLABFcn		      "angdiff(u(1), u(2))"
+	    }
+	    Block {
+	      BlockType		      Mux
+	      Name		      "Mux"
+	      SID		      "57:268"
+	      Ports		      [2, 1]
+	      Position		      [125, 71, 130, 109]
+	      ShowName		      off
+	      Inputs		      "2"
+	      DisplayOption	      "bar"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "d"
+	      SID		      "57:269"
+	      Position		      [275, 83, 305, 97]
+	      IconDisplay	      "Port number"
+	    }
+	    Line {
+	      SrcBlock		      "-"
+	      SrcPort		      1
+	      Points		      [40, 0]
+	      DstBlock		      "Mux"
+	      DstPort		      2
+	    }
+	    Line {
+	      SrcBlock		      "MATLAB Fcn"
+	      SrcPort		      1
+	      DstBlock		      "d"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Mux"
+	      SrcPort		      1
+	      DstBlock		      "MATLAB Fcn"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "+"
+	      SrcPort		      1
+	      DstBlock		      "Mux"
+	      DstPort		      1
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "jtraj"
+	  SID			  "270"
+	  Ports			  [0, 3]
+	  Position		  [45, 84, 80, 156]
+	  BackgroundColor	  "red"
+	  LibraryVersion	  "1.61"
+	  MinAlgLoopOccurrences	  off
+	  PropExecContextOutsideSubsystem off
+	  RTWSystemCode		  "Auto"
+	  FunctionWithSeparateData off
+	  Opaque		  off
+	  RequestExecContextInheritance	off
+	  MaskHideContents	  off
+	  MaskDescription	  "Joint interpolated trajectory."
+	  MaskHelp		  "Generate quintic polynomial to move from initial to final joint angles as specified.  Initial and fina"
+	  "l velocity are assumed to be zero.\n\n<b>Parameters::</b>\n\nq0 (1xN) initial joint coordinates\nqf (1xN) final joi"
+	  "nt coordinates\ntmax (1x1) the time for the trajectory to complete\n\nInitial and final velocity are assumed to be "
+	  "zero.\n\n<b>Outputs::</b>\n\nq (1xN) vector of joint coordinates at current simulation time\nqd (1xN) vector of joi"
+	  "nt coordinate velocity at current simulation time\nqdd (1xN) vector of joint coordinate acceleration at current sim"
+	  "ulation time\n\n<b>Notes::</b>\n\n- If simulation time exceeds tmax then q is clipped to qf.\n- A wrapper on the To"
+	  "olbox function jtraj.\n- The piecewise constant output of jtraj is interpolated to the current\n  simulation time.\n"
+	  "\n"
+	  MaskPromptString	  "q0|qf|tmax (s)|ts (s)"
+	  MaskStyleString	  "edit,edit,edit,edit"
+	  MaskVariables		  "q0=@1;qf=@2;tmax=@3;ts=@4;"
+	  MaskTunableValueString  "on,on,on,on"
+	  MaskCallbackString	  "|||"
+	  MaskEnableString	  "on,on,on,on"
+	  MaskVisibilityString	  "on,on,on,on"
+	  MaskToolTipString	  "on,on,on,on"
+	  MaskInitialization	  "n = length(q0);\nif length(q0) ~= length(qf) ,\n error('q0 and qf must be same length')\nend\n"
+	  "t=[0:100]'/100*tmax;\n[q,qd,qdd] = jtraj(q0, qf, t);"
+	  MaskDisplay		  "port_label('output', 1, 'q')\nport_label('output', 2, 'qd')\nport_label('output', 3, 'qdd')"
+	  MaskIconFrame		  on
+	  MaskIconOpaque	  on
+	  MaskIconRotate	  "none"
+	  MaskPortRotate	  "default"
+	  MaskIconUnits		  "normalized"
+	  MaskValueString	  "[0 0 0 0 0 0]|[pi/4 pi/2 -pi/2 0 0 0]|10|0.02"
+	  System {
+	    Name		    "jtraj"
+	    Location		    [817, 490, 1181, 681]
+	    Open		    off
+	    ModelBrowserVisibility  off
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "A4"
+	    PaperUnits		    "centimeters"
+	    TiledPaperMargins	    [1.270000, 1.270000, 1.270000, 1.270000]
+	    TiledPageScale	    1
+	    ShowPageBoundaries	    off
+	    ZoomFactor		    "100"
+	    SIDHighWatermark	    "225"
+	    SIDPrevWatermark	    "225"
+	    Block {
+	      BlockType		      Clock
+	      Name		      "Clock"
+	      SID		      "270:85"
+	      Position		      [20, 30, 40, 50]
+	    }
+	    Block {
+	      BlockType		      MATLABFcn
+	      Name		      "MATLAB Fcn"
+	      SID		      "270:86"
+	      Ports		      [1, 1]
+	      Position		      [105, 25, 165, 55]
+	      MATLABFcn		      "interp1(t,q,u)"
+	      OutputDimensions	      "n"
+	      SampleTime	      "ts"
+	    }
+	    Block {
+	      BlockType		      MATLABFcn
+	      Name		      "MATLAB Fcn1"
+	      SID		      "270:87"
+	      Ports		      [1, 1]
+	      Position		      [110, 75, 170, 105]
+	      MATLABFcn		      "interp1(t,qd,u)"
+	      OutputDimensions	      "n"
+	      SampleTime	      "ts"
+	    }
+	    Block {
+	      BlockType		      MATLABFcn
+	      Name		      "MATLAB Fcn2"
+	      SID		      "270:88"
+	      Ports		      [1, 1]
+	      Position		      [110, 125, 170, 155]
+	      MATLABFcn		      "interp1(t,qdd,u)"
+	      OutputDimensions	      "n"
+	      SampleTime	      "ts"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "q"
+	      SID		      "270:89"
+	      Position		      [220, 33, 250, 47]
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "qd"
+	      SID		      "270:90"
+	      Position		      [220, 83, 250, 97]
+	      Port		      "2"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "qdd"
+	      SID		      "270:91"
+	      Position		      [220, 133, 250, 147]
+	      Port		      "3"
+	      IconDisplay	      "Port number"
+	    }
+	    Line {
+	      SrcBlock		      "MATLAB Fcn2"
+	      SrcPort		      1
+	      DstBlock		      "qdd"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Clock"
+	      SrcPort		      1
+	      Points		      [30, 0]
+	      Branch {
+		Points			[0, 50]
+		Branch {
+		  Points		  [0, 50]
+		  DstBlock		  "MATLAB Fcn2"
+		  DstPort		  1
+		}
+		Branch {
+		  DstBlock		  "MATLAB Fcn1"
+		  DstPort		  1
+		}
+	      }
+	      Branch {
+		DstBlock		"MATLAB Fcn"
+		DstPort			1
+	      }
+	    }
+	    Line {
+	      SrcBlock		      "MATLAB Fcn1"
+	      SrcPort		      1
+	      DstBlock		      "qd"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "MATLAB Fcn"
+	      SrcPort		      1
+	      DstBlock		      "q"
+	      DstPort		      1
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "lspb"
+	  SID			  "271"
+	  Ports			  [0, 3]
+	  Position		  [130, 84, 165, 156]
+	  BackgroundColor	  "red"
+	  LibraryVersion	  "1.61"
+	  MinAlgLoopOccurrences	  off
+	  PropExecContextOutsideSubsystem off
+	  RTWSystemCode		  "Auto"
+	  FunctionWithSeparateData off
+	  Opaque		  off
+	  RequestExecContextInheritance	off
+	  MaskHideContents	  off
+	  MaskDescription	  "Scalar trajectory."
+	  MaskHelp		  "Generate linear segment with polynomial blend to move from initial to final\n joint angles as specifie"
+	  "d.\n\n<b>Parameters::</b>\n\nq0 (1x1) initial joint coordinate\nqf (1x1) final joint coordinate\ntmax (1x1) the tim"
+	  "e for the trajectory to complete\n\nInitial and final velocity are assumed to be zero.\n\n<b>Outputs::</b>\n\nq (1x"
+	  "1) joint coordinates at current simulation time\nqd (1x1) joint coordinate velocity at current simulation time\nqdd"
+	  " (1xN) joint coordinate acceleration at current simulation time\n\n<b>Notes::</b>\n\n- If simulation time exceeds t"
+	  "max then q is clipped to qf.\n- A wrapper on the Toolbox function lspb.\n- The piecewise constant output of jtraj i"
+	  "s interpolated to the current simulation time."
+	  MaskPromptString	  "q0|qf|tmax"
+	  MaskStyleString	  "edit,edit,edit"
+	  MaskVariables		  "q0=@1;qf=@2;tmax=@3;"
+	  MaskTunableValueString  "on,on,on"
+	  MaskCallbackString	  "||"
+	  MaskEnableString	  "on,on,on"
+	  MaskVisibilityString	  "on,on,on"
+	  MaskToolTipString	  "on,on,on"
+	  MaskInitialization	  "n = length(q0);\nif length(q0) ~= length(qf) ,\n error('q0 and qf must be same length')\nend\n"
+	  "t=[0:1000]'/1000*tmax;\n[q,qd,qdd] = lspb(q0, qf, t);"
+	  MaskIconFrame		  on
+	  MaskIconOpaque	  on
+	  MaskIconRotate	  "none"
+	  MaskPortRotate	  "default"
+	  MaskIconUnits		  "autoscale"
+	  MaskValueString	  "0|0|0"
+	  System {
+	    Name		    "lspb"
+	    Location		    [605, 660, 829, 805]
+	    Open		    off
+	    ModelBrowserVisibility  off
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "A4"
+	    PaperUnits		    "centimeters"
+	    TiledPaperMargins	    [1.270000, 1.270000, 1.270000, 1.270000]
+	    TiledPageScale	    1
+	    ShowPageBoundaries	    off
+	    ZoomFactor		    "80"
+	    SIDHighWatermark	    "595"
+	    SIDPrevWatermark	    "595"
+	    Block {
+	      BlockType		      Clock
+	      Name		      "Clock"
+	      SID		      "271:585"
+	      Position		      [25, 30, 45, 50]
+	    }
+	    Block {
+	      BlockType		      MATLABFcn
+	      Name		      "MATLAB Fcn"
+	      SID		      "271:586"
+	      Ports		      [1, 1]
+	      Position		      [110, 25, 170, 55]
+	      MATLABFcn		      "interp1(t,q,u)"
+	      OutputDimensions	      "n"
+	    }
+	    Block {
+	      BlockType		      MATLABFcn
+	      Name		      "MATLAB Fcn1"
+	      SID		      "271:587"
+	      Ports		      [1, 1]
+	      Position		      [115, 75, 175, 105]
+	      MATLABFcn		      "interp1(t,qd,u)"
+	      OutputDimensions	      "n"
+	    }
+	    Block {
+	      BlockType		      MATLABFcn
+	      Name		      "MATLAB Fcn2"
+	      SID		      "271:588"
+	      Ports		      [1, 1]
+	      Position		      [115, 125, 175, 155]
+	      MATLABFcn		      "interp1(t,qdd,u)"
+	      OutputDimensions	      "n"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "q"
+	      SID		      "271:593"
+	      Position		      [225, 33, 255, 47]
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "qd"
+	      SID		      "271:594"
+	      Position		      [225, 83, 255, 97]
+	      Port		      "2"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "qdd"
+	      SID		      "271:595"
+	      Position		      [225, 133, 255, 147]
+	      Port		      "3"
+	      IconDisplay	      "Port number"
+	    }
+	    Line {
+	      SrcBlock		      "MATLAB Fcn"
+	      SrcPort		      1
+	      DstBlock		      "q"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "MATLAB Fcn1"
+	      SrcPort		      1
+	      DstBlock		      "qd"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Clock"
+	      SrcPort		      1
+	      Points		      [30, 0]
+	      Branch {
+		DstBlock		"MATLAB Fcn"
+		DstPort			1
+	      }
+	      Branch {
+		Points			[0, 50]
+		Branch {
+		  DstBlock		  "MATLAB Fcn1"
+		  DstPort		  1
+		}
+		Branch {
+		  Points		  [0, 50]
+		  DstBlock		  "MATLAB Fcn2"
+		  DstPort		  1
+		}
+	      }
+	    }
+	    Line {
+	      SrcBlock		      "MATLAB Fcn2"
+	      SrcPort		      1
+	      DstBlock		      "qdd"
+	      DstPort		      1
+	    }
+	  }
+	}
+	Annotation {
+	  SID			  "150"
+	  Name			  "\nTrajectory   \n "
+	  Position		  [52, 22]
+	  BackgroundColor	  "cyan"
+	  FontSize		  18
+	}
+	Annotation {
+	  SID			  "151"
+	  Name			  "Robotics Toolbox for MATLAB"
+	  Position		  [111, 12]
+	  HorizontalAlignment	  "left"
+	  FontSize		  12
+	  FontWeight		  "bold"
+	}
+      }
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "Transform"
+      SID		      "35"
+      Ports		      []
+      Position		      [15, 199, 123, 242]
+      BackgroundColor	      "darkGreen"
+      ShowName		      off
+      LibraryVersion	      "1.225"
+      MinAlgLoopOccurrences   off
+      PropExecContextOutsideSubsystem off
+      RTWSystemCode	      "Auto"
+      FunctionWithSeparateData off
+      Opaque		      off
+      RequestExecContextInheritance off
+      MaskHideContents	      off
+      MaskDisplay	      "color('darkBlue')\ndisp('Transform')"
+      MaskIconFrame	      on
+      MaskIconOpaque	      on
+      MaskIconRotate	      "none"
+      MaskPortRotate	      "default"
+      MaskIconUnits	      "autoscale"
+      System {
+	Name			"Transform"
+	Location		[1866, 1029, 2244, 1305]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"A4"
+	PaperUnits		"centimeters"
+	TiledPaperMargins	[1.270000, 1.270000, 1.270000, 1.270000]
+	TiledPageScale		1
+	ShowPageBoundaries	off
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "Inverse"
+	  SID			  "596"
+	  Ports			  [1, 1]
+	  Position		  [230, 90, 270, 150]
+	  LibraryVersion	  "1.61"
+	  MinAlgLoopOccurrences	  off
+	  PropExecContextOutsideSubsystem off
+	  RTWSystemCode		  "Auto"
+	  FunctionWithSeparateData off
+	  Opaque		  off
+	  RequestExecContextInheritance	off
+	  MaskHideContents	  off
+	  MaskDescription	  "Inverse of homogeneous transformation"
+	  MaskHelp		  "Inverse of homogeneous transformation\n \n \n<b>Inputs::</b>\n \nT (4x4) Incoming homogeneous transfor"
+	  "m\n \n<b>Outputs::</b>\n \ninvT (4x4) Outgoing homogeneous transformation T^(-1)\n\n<b>Notes::</b>\n- Efficient imp"
+	  "lementation that uses transpose of rotation submatrix.\n"
+	  MaskIconFrame		  on
+	  MaskIconOpaque	  on
+	  MaskIconRotate	  "none"
+	  MaskPortRotate	  "default"
+	  MaskIconUnits		  "autoscale"
+	  System {
+	    Name		    "Inverse"
+	    Location		    [1250, 564, 1470, 646]
+	    Open		    off
+	    ModelBrowserVisibility  off
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "A4"
+	    PaperUnits		    "centimeters"
+	    TiledPaperMargins	    [1.270000, 1.270000, 1.270000, 1.270000]
+	    TiledPageScale	    1
+	    ShowPageBoundaries	    off
+	    ZoomFactor		    "100"
+	    SIDHighWatermark	    "225"
+	    SIDPrevWatermark	    "225"
+	    Block {
+	      BlockType		      Inport
+	      Name		      "T"
+	      SID		      "596:219"
+	      Position		      [25, 33, 55, 47]
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      MATLABFcn
+	      Name		      "MATLAB Fcn"
+	      SID		      "596:217"
+	      Ports		      [1, 1]
+	      Position		      [80, 25, 140, 55]
+	      MATLABFcn		      "inv(u)"
+	      OutputDimensions	      "[4,4]"
+	      Output1D		      off
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "invT"
+	      SID		      "596:220"
+	      Position		      [165, 33, 195, 47]
+	      IconDisplay	      "Port number"
+	    }
+	    Line {
+	      SrcBlock		      "MATLAB Fcn"
+	      SrcPort		      1
+	      DstBlock		      "invT"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "T"
+	      SrcPort		      1
+	      DstBlock		      "MATLAB Fcn"
+	      DstPort		      1
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "Post multiply"
+	  SID			  "597"
+	  Ports			  [1, 1]
+	  Position		  [130, 90, 170, 150]
+	  LibraryVersion	  "1.61"
+	  MinAlgLoopOccurrences	  off
+	  PropExecContextOutsideSubsystem off
+	  RTWSystemCode		  "Auto"
+	  FunctionWithSeparateData off
+	  Opaque		  off
+	  RequestExecContextInheritance	off
+	  MaskHideContents	  off
+	  MaskDescription	  "Post-multiply incoming transform by a constant transformation"
+	  MaskHelp		  "Post-multiply homogeneous transform signal by a constant transform.\n \n<b>Parameters::</b>\n \nTP (4x"
+	  "4)  The transform to post-multiply by\n \n<b>Inputs::</b>\n \nT1 (4x4) Incoming homogeneous transform\n \n<b>Output"
+	  "s::</b>\n \nT (4x4) Outgoing homogeneous transformation is T1*TP\n\n\n"
+	  MaskPromptString	  "TP"
+	  MaskStyleString	  "edit"
+	  MaskVariables		  "T2=@1;"
+	  MaskTunableValueString  "on"
+	  MaskEnableString	  "on"
+	  MaskVisibilityString	  "on"
+	  MaskToolTipString	  "on"
+	  MaskIconFrame		  on
+	  MaskIconOpaque	  on
+	  MaskIconRotate	  "none"
+	  MaskPortRotate	  "default"
+	  MaskIconUnits		  "autoscale"
+	  MaskValueString	  "0"
+	  System {
+	    Name		    "Post multiply"
+	    Location		    [862, 540, 1158, 690]
+	    Open		    off
+	    ModelBrowserVisibility  off
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "A4"
+	    PaperUnits		    "centimeters"
+	    TiledPaperMargins	    [1.270000, 1.270000, 1.270000, 1.270000]
+	    TiledPageScale	    1
+	    ShowPageBoundaries	    off
+	    ZoomFactor		    "100"
+	    SIDHighWatermark	    "225"
+	    SIDPrevWatermark	    "225"
+	    Block {
+	      BlockType		      Inport
+	      Name		      "T1"
+	      SID		      "597:215"
+	      Position		      [25, 38, 55, 52]
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Constant
+	      Name		      "Constant"
+	      SID		      "597:221"
+	      Position		      [25, 85, 55, 115]
+	      Value		      "T2"
+	    }
+	    Block {
+	      BlockType		      Product
+	      Name		      "Product"
+	      SID		      "597:212"
+	      Ports		      [2, 1]
+	      Position		      [85, 29, 115, 96]
+	      Multiplication	      "Matrix(*)"
+	      InputSameDT	      off
+	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+	      SaturateOnIntegerOverflow	off
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "T"
+	      SID		      "597:216"
+	      Position		      [160, 58, 190, 72]
+	      IconDisplay	      "Port number"
+	    }
+	    Line {
+	      SrcBlock		      "T1"
+	      SrcPort		      1
+	      DstBlock		      "Product"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Constant"
+	      SrcPort		      1
+	      Points		      [0, -20]
+	      DstBlock		      "Product"
+	      DstPort		      2
+	    }
+	    Line {
+	      SrcBlock		      "Product"
+	      SrcPort		      1
+	      DstBlock		      "T"
+	      DstPort		      1
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "Pre multiply"
+	  SID			  "598"
+	  Ports			  [1, 1]
+	  Position		  [30, 90, 70, 150]
+	  LibraryVersion	  "1.61"
+	  MinAlgLoopOccurrences	  off
+	  PropExecContextOutsideSubsystem off
+	  RTWSystemCode		  "Auto"
+	  FunctionWithSeparateData off
+	  Opaque		  off
+	  RequestExecContextInheritance	off
+	  MaskHideContents	  off
+	  MaskDescription	  "Pre-multiply homogeneous transform by constant transform."
+	  MaskHelp		  "Pre-multiply homogeneous transform signal by a constant transform.\n \n<b>Parameters::</b>\n \nTP (4x4"
+	  ")  The transform to pre-multiply by\n \n<b>Inputs::</b>\n \nT2 (4x4) Incoming homogeneous transform\n \n<b>Outputs:"
+	  ":</b>\n \nT (4x4) Outgoing homogeneous transformation is TP*T2\n\n\n"
+	  MaskPromptString	  "T1"
+	  MaskStyleString	  "edit"
+	  MaskVariables		  "T=@1;"
+	  MaskTunableValueString  "on"
+	  MaskEnableString	  "on"
+	  MaskVisibilityString	  "on"
+	  MaskToolTipString	  "on"
+	  MaskIconFrame		  on
+	  MaskIconOpaque	  on
+	  MaskIconRotate	  "none"
+	  MaskPortRotate	  "default"
+	  MaskIconUnits		  "autoscale"
+	  MaskValueString	  "0"
+	  System {
+	    Name		    "Pre multiply"
+	    Location		    [80, 131, 397, 314]
+	    Open		    off
+	    ModelBrowserVisibility  off
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "A4"
+	    PaperUnits		    "centimeters"
+	    TiledPaperMargins	    [1.270000, 1.270000, 1.270000, 1.270000]
+	    TiledPageScale	    1
+	    ShowPageBoundaries	    off
+	    ZoomFactor		    "100"
+	    SIDHighWatermark	    "225"
+	    SIDPrevWatermark	    "225"
+	    Block {
+	      BlockType		      Inport
+	      Name		      "T2"
+	      SID		      "598:208"
+	      Position		      [25, 83, 55, 97]
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Constant
+	      Name		      "Constant"
+	      SID		      "598:202"
+	      Position		      [25, 30, 55, 60]
+	      Value		      "T"
+	      VectorParams1D	      off
+	    }
+	    Block {
+	      BlockType		      Product
+	      Name		      "Product"
+	      SID		      "598:203"
+	      Ports		      [2, 1]
+	      Position		      [85, 29, 115, 96]
+	      Multiplication	      "Matrix(*)"
+	      InputSameDT	      off
+	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+	      SaturateOnIntegerOverflow	off
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "T"
+	      SID		      "598:207"
+	      Position		      [160, 58, 190, 72]
+	      IconDisplay	      "Port number"
+	    }
+	    Line {
+	      SrcBlock		      "T2"
+	      SrcPort		      1
+	      Points		      [0, -10]
+	      DstBlock		      "Product"
+	      DstPort		      2
+	    }
+	    Line {
+	      SrcBlock		      "Product"
+	      SrcPort		      1
+	      DstBlock		      "T"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Constant"
+	      SrcPort		      1
+	      DstBlock		      "Product"
+	      DstPort		      1
+	    }
+	  }
+	}
+	Annotation {
+	  SID			  "152"
+	  Name			  "\nTransform  \n "
+	  Position		  [52, 32]
+	  BackgroundColor	  "cyan"
+	  FontSize		  18
+	}
+	Annotation {
+	  SID			  "153"
+	  Name			  "Robotics Toolbox for MATLAB"
+	  Position		  [121, 17]
+	  HorizontalAlignment	  "left"
+	  FontSize		  12
+	  FontWeight		  "bold"
+	}
+      }
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "Transform Conversion"
+      SID		      "599"
+      Ports		      []
+      Position		      [15, 129, 123, 172]
+      BackgroundColor	      "darkGreen"
+      ShowName		      off
+      LibraryVersion	      "1.225"
+      MinAlgLoopOccurrences   off
+      PropExecContextOutsideSubsystem off
+      RTWSystemCode	      "Auto"
+      FunctionWithSeparateData off
+      Opaque		      off
+      RequestExecContextInheritance off
+      MaskHideContents	      off
+      MaskDisplay	      "color('darkBlue')\ndisp('Transform Conversion')"
+      MaskIconFrame	      on
+      MaskIconOpaque	      on
+      MaskIconRotate	      "none"
+      MaskPortRotate	      "default"
+      MaskIconUnits	      "autoscale"
+      System {
+	Name			"Transform Conversion"
+	Location		[1865, 605, 2244, 977]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"A4"
+	PaperUnits		"centimeters"
+	TiledPaperMargins	[1.270000, 1.270000, 1.270000, 1.270000]
+	TiledPageScale		1
+	ShowPageBoundaries	off
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "T2eul"
+	  SID			  "600"
+	  Ports			  [1, 3]
+	  Position		  [265, 242, 300, 298]
+	  BackgroundColor	  "red"
+	  LibraryVersion	  "1.61"
+	  MinAlgLoopOccurrences	  off
+	  PropExecContextOutsideSubsystem off
+	  RTWSystemCode		  "Auto"
+	  FunctionWithSeparateData off
+	  Opaque		  off
+	  RequestExecContextInheritance	off
+	  MaskHideContents	  off
+	  MaskDescription	  "Convert transform to Euler angles."
+	  MaskHelp		  "Convert homogeneous transformation to Euler angles.\n \n \n<b>Inputs::</b>\n \nT (4x4) the attitude as"
+	  " a homogeneous transformation\n\n<b>Outputs::</b>\n\nphi (1x1) first Euler angle [rad]\ntheta (1x1) second Euler an"
+	  "gle [rad]\npsi (1x1) third Euler angle [rad]\n \n<b>Notes::</b>\n \n- Axis rotation order is z-y-z (aerospace conve"
+	  "ntion).\n- Wrapper for the Toolbox function tr2eul().\n\n"
+	  MaskIconFrame		  on
+	  MaskIconOpaque	  on
+	  MaskIconRotate	  "none"
+	  MaskPortRotate	  "default"
+	  MaskIconUnits		  "normalized"
+	  System {
+	    Name		    "T2eul"
+	    Location		    [167, 513, 531, 662]
+	    Open		    off
+	    ModelBrowserVisibility  off
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "A4"
+	    PaperUnits		    "centimeters"
+	    TiledPaperMargins	    [1.270000, 1.270000, 1.270000, 1.270000]
+	    TiledPageScale	    1
+	    ShowPageBoundaries	    off
+	    ZoomFactor		    "100"
+	    SIDHighWatermark	    "225"
+	    SIDPrevWatermark	    "225"
+	    Block {
+	      BlockType		      Inport
+	      Name		      "T"
+	      SID		      "600:601"
+	      Position		      [30, 63, 60, 77]
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Demux
+	      Name		      "Demux"
+	      SID		      "600:36"
+	      Ports		      [1, 3]
+	      Position		      [225, 13, 230, 127]
+	      BackgroundColor	      "black"
+	      ShowName		      off
+	      Outputs		      "3"
+	    }
+	    Block {
+	      BlockType		      MATLABFcn
+	      Name		      "MATLAB Fcn"
+	      SID		      "600:37"
+	      Ports		      [1, 1]
+	      Position		      [105, 55, 165, 85]
+	      MATLABFcn		      "tr2eul(u)"
+	      OutputDimensions	      "3"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "a"
+	      SID		      "600:38"
+	      Position		      [265, 23, 295, 37]
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "b"
+	      SID		      "600:39"
+	      Position		      [255, 63, 285, 77]
+	      Port		      "2"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "c"
+	      SID		      "600:40"
+	      Position		      [255, 103, 285, 117]
+	      Port		      "3"
+	      IconDisplay	      "Port number"
+	    }
+	    Line {
+	      SrcBlock		      "T"
+	      SrcPort		      1
+	      DstBlock		      "MATLAB Fcn"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "MATLAB Fcn"
+	      SrcPort		      1
+	      DstBlock		      "Demux"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Demux"
+	      SrcPort		      1
+	      DstBlock		      "a"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Demux"
+	      SrcPort		      2
+	      DstBlock		      "b"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Demux"
+	      SrcPort		      3
+	      DstBlock		      "c"
+	      DstPort		      1
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "T2rpy"
+	  SID			  "602"
+	  Ports			  [1, 3]
+	  Position		  [155, 243, 195, 297]
+	  BackgroundColor	  "red"
+	  LibraryVersion	  "1.61"
+	  MinAlgLoopOccurrences	  off
+	  PropExecContextOutsideSubsystem off
+	  RTWSystemCode		  "Auto"
+	  FunctionWithSeparateData off
+	  Opaque		  off
+	  RequestExecContextInheritance	off
+	  MaskHideContents	  off
+	  MaskDescription	  "Convert transform to roll/pitch/yaw angles."
+	  MaskHelp		  "Convert homogeneous transformation to roll/pitch/yaw angles.\n \n \n<b>Inputs::</b>\n\nT (4x4) the att"
+	  "itude as a homogeneous transformation\n\n<b>Outputs::</b>\n \nroll (1x1) roll angle [rad]\npitch (1x1) pitch angle "
+	  "[rad]\nyaw (1x1) yaw angle [rad]\n \n<b>Notes::</b>\n \n- Axis rotation order is x-y-z (aerospace convention).\n- W"
+	  "rapper for the Toolbox function tr2rpy().\n\n"
+	  MaskIconFrame		  on
+	  MaskIconOpaque	  on
+	  MaskIconRotate	  "none"
+	  MaskPortRotate	  "default"
+	  MaskIconUnits		  "normalized"
+	  System {
+	    Name		    "T2rpy"
+	    Location		    [167, 513, 531, 662]
+	    Open		    off
+	    ModelBrowserVisibility  off
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "A4"
+	    PaperUnits		    "centimeters"
+	    TiledPaperMargins	    [1.270000, 1.270000, 1.270000, 1.270000]
+	    TiledPageScale	    1
+	    ShowPageBoundaries	    off
+	    ZoomFactor		    "100"
+	    SIDHighWatermark	    "225"
+	    SIDPrevWatermark	    "225"
+	    Block {
+	      BlockType		      Inport
+	      Name		      "T"
+	      SID		      "602:42"
+	      Position		      [30, 63, 60, 77]
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Demux
+	      Name		      "Demux"
+	      SID		      "602:43"
+	      Ports		      [1, 3]
+	      Position		      [225, 13, 230, 127]
+	      BackgroundColor	      "black"
+	      ShowName		      off
+	      Outputs		      "3"
+	    }
+	    Block {
+	      BlockType		      MATLABFcn
+	      Name		      "MATLAB Fcn"
+	      SID		      "602:44"
+	      Ports		      [1, 1]
+	      Position		      [105, 55, 165, 85]
+	      MATLABFcn		      "tr2rpy(u)"
+	      OutputDimensions	      "3"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "roll"
+	      SID		      "602:45"
+	      Position		      [265, 23, 295, 37]
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "pitch"
+	      SID		      "602:46"
+	      Position		      [255, 63, 285, 77]
+	      Port		      "2"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "yaw"
+	      SID		      "602:47"
+	      Position		      [255, 103, 285, 117]
+	      Port		      "3"
+	      IconDisplay	      "Port number"
+	    }
+	    Line {
+	      SrcBlock		      "T"
+	      SrcPort		      1
+	      DstBlock		      "MATLAB Fcn"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "MATLAB Fcn"
+	      SrcPort		      1
+	      DstBlock		      "Demux"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Demux"
+	      SrcPort		      1
+	      DstBlock		      "roll"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Demux"
+	      SrcPort		      2
+	      DstBlock		      "pitch"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Demux"
+	      SrcPort		      3
+	      DstBlock		      "yaw"
+	      DstPort		      1
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "T2xyz"
+	  SID			  "603"
+	  Ports			  [1, 3]
+	  Position		  [55, 242, 90, 298]
+	  BackgroundColor	  "red"
+	  LibraryVersion	  "1.61"
+	  MinAlgLoopOccurrences	  off
+	  PropExecContextOutsideSubsystem off
+	  RTWSystemCode		  "Auto"
+	  FunctionWithSeparateData off
+	  Opaque		  off
+	  RequestExecContextInheritance	off
+	  MaskHideContents	  off
+	  MaskDescription	  "Convert transform to xyz scalars"
+	  MaskHelp		  "Convert homogeneous transformation to position scalars.\n\n\n<b>Inputs::</b>\n\nT (4x4) a translation "
+	  "represented as a homogeneous transformation\n\n<b>Outputs::</b>\n\nx (1x1) x-coordinate\ny (1x1) y-coordinate\nz (1"
+	  "x1) z-coordinate\n\n<b>Notes::</b>\n\n- A wrapper for the Toolbox function transl().\n"
+	  MaskIconFrame		  on
+	  MaskIconOpaque	  on
+	  MaskIconRotate	  "none"
+	  MaskPortRotate	  "default"
+	  MaskIconUnits		  "normalized"
+	  System {
+	    Name		    "T2xyz"
+	    Location		    [167, 513, 531, 662]
+	    Open		    off
+	    ModelBrowserVisibility  off
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "A4"
+	    PaperUnits		    "centimeters"
+	    TiledPaperMargins	    [1.270000, 1.270000, 1.270000, 1.270000]
+	    TiledPageScale	    1
+	    ShowPageBoundaries	    off
+	    ZoomFactor		    "100"
+	    SIDHighWatermark	    "225"
+	    SIDPrevWatermark	    "225"
+	    Block {
+	      BlockType		      Inport
+	      Name		      "T"
+	      SID		      "603:49"
+	      Position		      [30, 63, 60, 77]
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Demux
+	      Name		      "Demux"
+	      SID		      "603:50"
+	      Ports		      [1, 3]
+	      Position		      [225, 13, 230, 127]
+	      BackgroundColor	      "black"
+	      ShowName		      off
+	      Outputs		      "3"
+	    }
+	    Block {
+	      BlockType		      MATLABFcn
+	      Name		      "MATLAB Fcn"
+	      SID		      "603:604"
+	      Ports		      [1, 1]
+	      Position		      [105, 55, 165, 85]
+	      MATLABFcn		      "transl(u)"
+	      OutputDimensions	      "3"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "x"
+	      SID		      "603:605"
+	      Position		      [265, 23, 295, 37]
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "y"
+	      SID		      "603:606"
+	      Position		      [255, 63, 285, 77]
+	      Port		      "2"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "z"
+	      SID		      "603:607"
+	      Position		      [255, 103, 285, 117]
+	      Port		      "3"
+	      IconDisplay	      "Port number"
+	    }
+	    Line {
+	      SrcBlock		      "Demux"
+	      SrcPort		      3
+	      DstBlock		      "z"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Demux"
+	      SrcPort		      2
+	      DstBlock		      "y"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Demux"
+	      SrcPort		      1
+	      DstBlock		      "x"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "MATLAB Fcn"
+	      SrcPort		      1
+	      DstBlock		      "Demux"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "T"
+	      SrcPort		      1
+	      DstBlock		      "MATLAB Fcn"
+	      DstPort		      1
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "eul2T"
+	  SID			  "608"
+	  Ports			  [3, 1]
+	  Position		  [265, 122, 300, 178]
+	  BackgroundColor	  "red"
+	  LibraryVersion	  "1.61"
+	  MinAlgLoopOccurrences	  off
+	  PropExecContextOutsideSubsystem off
+	  RTWSystemCode		  "Auto"
+	  FunctionWithSeparateData off
+	  Opaque		  off
+	  RequestExecContextInheritance	off
+	  MaskHideContents	  off
+	  MaskDescription	  "Convert Euler angles to transform."
+	  MaskHelp		  "Convert Euler angles to homogeneous transformation.\n \n \n<b>Inputs::</b>\n \nphi (1x1) first Euler a"
+	  "ngle [rad]\ntheta (1x1) second Euler angle [rad]\npsi (1x1) third Euler angle [rad]\n\n\n<b>Outputs::</b>\n \nT (4x"
+	  "4) the attitude as a homogeneous transformation\n \n<b>Notes::</b>\n \n- Axis rotation order is z-y-z (aerospace co"
+	  "nvention).\n- Wrapper for the Toolbox function eul2tr().\n\n"
+	  MaskIconFrame		  on
+	  MaskIconOpaque	  on
+	  MaskIconRotate	  "none"
+	  MaskPortRotate	  "default"
+	  MaskIconUnits		  "normalized"
+	  System {
+	    Name		    "eul2T"
+	    Location		    [167, 513, 531, 662]
+	    Open		    off
+	    ModelBrowserVisibility  off
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "A4"
+	    PaperUnits		    "centimeters"
+	    TiledPaperMargins	    [1.270000, 1.270000, 1.270000, 1.270000]
+	    TiledPageScale	    1
+	    ShowPageBoundaries	    off
+	    ZoomFactor		    "100"
+	    SIDHighWatermark	    "225"
+	    SIDPrevWatermark	    "225"
+	    Block {
+	      BlockType		      Inport
+	      Name		      "a"
+	      SID		      "608:609"
+	      Position		      [25, 33, 55, 47]
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "b"
+	      SID		      "608:610"
+	      Position		      [25, 68, 55, 82]
+	      Port		      "2"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "c"
+	      SID		      "608:611"
+	      Position		      [25, 103, 55, 117]
+	      Port		      "3"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      MATLABFcn
+	      Name		      "MATLAB Fcn"
+	      SID		      "608:612"
+	      Ports		      [1, 1]
+	      Position		      [120, 60, 180, 90]
+	      MATLABFcn		      "eul2tr(u)"
+	      OutputDimensions	      "[4 4]"
+	      Output1D		      off
+	    }
+	    Block {
+	      BlockType		      Mux
+	      Name		      "Mux"
+	      SID		      "608:613"
+	      Ports		      [3, 1]
+	      Position		      [85, 20, 90, 130]
+	      ShowName		      off
+	      Inputs		      "3"
+	      DisplayOption	      "bar"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "T"
+	      SID		      "608:614"
+	      Position		      [225, 68, 255, 82]
+	      IconDisplay	      "Port number"
+	    }
+	    Line {
+	      SrcBlock		      "b"
+	      SrcPort		      1
+	      DstBlock		      "Mux"
+	      DstPort		      2
+	    }
+	    Line {
+	      SrcBlock		      "a"
+	      SrcPort		      1
+	      DstBlock		      "Mux"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Mux"
+	      SrcPort		      1
+	      DstBlock		      "MATLAB Fcn"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "MATLAB Fcn"
+	      SrcPort		      1
+	      DstBlock		      "T"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "c"
+	      SrcPort		      1
+	      DstBlock		      "Mux"
+	      DstPort		      3
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "rpy2T"
+	  SID			  "615"
+	  Ports			  [3, 1]
+	  Position		  [155, 122, 195, 178]
+	  BackgroundColor	  "red"
+	  LibraryVersion	  "1.61"
+	  MinAlgLoopOccurrences	  off
+	  PropExecContextOutsideSubsystem off
+	  RTWSystemCode		  "Auto"
+	  FunctionWithSeparateData off
+	  Opaque		  off
+	  RequestExecContextInheritance	off
+	  MaskHideContents	  off
+	  MaskDescription	  "Convert roll/pitch/yaw angles to transform."
+	  MaskHelp		  "Convert roll/pitch/yaw angles to homogeneous transformation.\n \n \n<b>Inputs::</b>\n \nroll (1x1) rol"
+	  "l angle [rad]\npitch (1x1) pitch angle [rad]\nyaw (1x1) yaw angle [rad]\n\n\n<b>Outputs::</b>\n \nT (4x4) the attit"
+	  "ude as a homogeneous transformation\n \n<b>Notes::</b>\n \n- Axis rotation order is x-y-z (aerospace convention).\n"
+	  "- Wrapper for the Toolbox function rpy2tr().\n\n"
+	  MaskIconFrame		  on
+	  MaskIconOpaque	  on
+	  MaskIconRotate	  "none"
+	  MaskPortRotate	  "default"
+	  MaskIconUnits		  "normalized"
+	  System {
+	    Name		    "rpy2T"
+	    Location		    [167, 513, 531, 662]
+	    Open		    off
+	    ModelBrowserVisibility  off
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "A4"
+	    PaperUnits		    "centimeters"
+	    TiledPaperMargins	    [1.270000, 1.270000, 1.270000, 1.270000]
+	    TiledPageScale	    1
+	    ShowPageBoundaries	    off
+	    ZoomFactor		    "100"
+	    SIDHighWatermark	    "225"
+	    SIDPrevWatermark	    "225"
+	    Block {
+	      BlockType		      Inport
+	      Name		      "roll"
+	      SID		      "615:104"
+	      Position		      [25, 33, 55, 47]
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "pitch"
+	      SID		      "615:105"
+	      Position		      [25, 68, 55, 82]
+	      Port		      "2"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "yaw"
+	      SID		      "615:106"
+	      Position		      [25, 103, 55, 117]
+	      Port		      "3"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      MATLABFcn
+	      Name		      "MATLAB Fcn"
+	      SID		      "615:107"
+	      Ports		      [1, 1]
+	      Position		      [120, 60, 180, 90]
+	      MATLABFcn		      "rpy2tr(u)"
+	      OutputDimensions	      "[4 4]"
+	      Output1D		      off
+	    }
+	    Block {
+	      BlockType		      Mux
+	      Name		      "Mux"
+	      SID		      "615:108"
+	      Ports		      [3, 1]
+	      Position		      [85, 20, 90, 130]
+	      ShowName		      off
+	      Inputs		      "3"
+	      DisplayOption	      "bar"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "T"
+	      SID		      "615:109"
+	      Position		      [225, 68, 255, 82]
+	      IconDisplay	      "Port number"
+	    }
+	    Line {
+	      SrcBlock		      "pitch"
+	      SrcPort		      1
+	      DstBlock		      "Mux"
+	      DstPort		      2
+	    }
+	    Line {
+	      SrcBlock		      "roll"
+	      SrcPort		      1
+	      DstBlock		      "Mux"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Mux"
+	      SrcPort		      1
+	      DstBlock		      "MATLAB Fcn"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "MATLAB Fcn"
+	      SrcPort		      1
+	      DstBlock		      "T"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "yaw"
+	      SrcPort		      1
+	      DstBlock		      "Mux"
+	      DstPort		      3
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "xyz2T"
+	  SID			  "616"
+	  Ports			  [3, 1]
+	  Position		  [55, 121, 90, 179]
+	  BackgroundColor	  "red"
+	  LibraryVersion	  "1.61"
+	  MinAlgLoopOccurrences	  off
+	  PropExecContextOutsideSubsystem off
+	  RTWSystemCode		  "Auto"
+	  FunctionWithSeparateData off
+	  Opaque		  off
+	  RequestExecContextInheritance	off
+	  MaskHideContents	  off
+	  MaskDescription	  "Convert xyz scalars to transform."
+	  MaskHelp		  "Convert position scalars to a homogeneous transformation.\n\n\n<b>Inputs::</b>\n\nx (1x1) x-coordinate"
+	  "\ny (1x1) y-coordinate\nz (1x1) z-coordinate\n\n\n<b>Outputs::</b>\n\nT (4x4) a translation represented as a homoge"
+	  "neous transformation\n\n<b>Notes::</b>\n\n- A wrapper for the Toolbox function transl().\n"
+	  MaskSelfModifiable	  on
+	  MaskIconFrame		  on
+	  MaskIconOpaque	  on
+	  MaskIconRotate	  "none"
+	  MaskPortRotate	  "default"
+	  MaskIconUnits		  "normalized"
+	  System {
+	    Name		    "xyz2T"
+	    Location		    [167, 513, 531, 662]
+	    Open		    off
+	    ModelBrowserVisibility  off
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "A4"
+	    PaperUnits		    "centimeters"
+	    TiledPaperMargins	    [1.270000, 1.270000, 1.270000, 1.270000]
+	    TiledPageScale	    1
+	    ShowPageBoundaries	    off
+	    ZoomFactor		    "100"
+	    SIDHighWatermark	    "225"
+	    SIDPrevWatermark	    "225"
+	    Block {
+	      BlockType		      Inport
+	      Name		      "x"
+	      SID		      "616:119"
+	      Position		      [25, 33, 55, 47]
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "y"
+	      SID		      "616:120"
+	      Position		      [25, 68, 55, 82]
+	      Port		      "2"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "z"
+	      SID		      "616:121"
+	      Position		      [25, 103, 55, 117]
+	      Port		      "3"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      MATLABFcn
+	      Name		      "MATLAB Fcn"
+	      SID		      "616:122"
+	      Ports		      [1, 1]
+	      Position		      [120, 60, 180, 90]
+	      MATLABFcn		      "transl(u)"
+	      OutputDimensions	      "[4 4]"
+	      Output1D		      off
+	    }
+	    Block {
+	      BlockType		      Mux
+	      Name		      "Mux"
+	      SID		      "616:123"
+	      Ports		      [3, 1]
+	      Position		      [85, 20, 90, 130]
+	      ShowName		      off
+	      Inputs		      "3"
+	      DisplayOption	      "bar"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "T"
+	      SID		      "616:124"
+	      Position		      [225, 68, 255, 82]
+	      IconDisplay	      "Port number"
+	    }
+	    Line {
+	      SrcBlock		      "z"
+	      SrcPort		      1
+	      DstBlock		      "Mux"
+	      DstPort		      3
+	    }
+	    Line {
+	      SrcBlock		      "MATLAB Fcn"
+	      SrcPort		      1
+	      DstBlock		      "T"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Mux"
+	      SrcPort		      1
+	      DstBlock		      "MATLAB Fcn"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "x"
+	      SrcPort		      1
+	      DstBlock		      "Mux"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "y"
+	      SrcPort		      1
+	      DstBlock		      "Mux"
+	      DstPort		      2
+	    }
+	  }
+	}
+	Annotation {
+	  SID			  "154"
+	  Name			  "\nTransform\nconversion  \n "
+	  Position		  [2, 32]
+	  HorizontalAlignment	  "left"
+	  BackgroundColor	  "cyan"
+	  FontSize		  18
+	}
+	Annotation {
+	  SID			  "155"
+	  Name			  "Robotics Toolbox for MATLAB"
+	  Position		  [121, 17]
+	  HorizontalAlignment	  "left"
+	  FontSize		  12
+	  FontWeight		  "bold"
+	}
+	Annotation {
+	  SID			  "619"
+	  Name			  "Translation"
+	  Position		  [76, 91]
+	  ForegroundColor	  "orange"
+	}
+	Annotation {
+	  SID			  "618"
+	  Name			  "roll/pitch/yaw\nangles"
+	  Position		  [181, 96]
+	  ForegroundColor	  "orange"
+	}
+	Annotation {
+	  SID			  "617"
+	  Name			  "Euler angles"
+	  Position		  [286, 91]
+	  ForegroundColor	  "orange"
+	}
+      }
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "Vision"
+      SID		      "41"
+      Ports		      []
+      Position		      [15, 318, 122, 361]
+      BackgroundColor	      "lightBlue"
+      ShowName		      off
+      LibraryVersion	      "1.225"
+      MinAlgLoopOccurrences   off
+      PropExecContextOutsideSubsystem off
+      RTWSystemCode	      "Auto"
+      FunctionWithSeparateData off
+      Opaque		      off
+      RequestExecContextInheritance off
+      MaskHideContents	      off
+      MaskDisplay	      "color('Black')\ndisp('Vision')"
+      MaskIconFrame	      on
+      MaskIconOpaque	      on
+      MaskIconRotate	      "none"
+      MaskPortRotate	      "default"
+      MaskIconUnits	      "autoscale"
+      System {
+	Name			"Vision"
+	Location		[1774, 288, 2153, 879]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"A4"
+	PaperUnits		"centimeters"
+	TiledPaperMargins	[1.270000, 1.270000, 1.270000, 1.270000]
+	TiledPageScale		1
+	ShowPageBoundaries	off
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "Pose estimation"
+	  SID			  "620"
+	  Ports			  [1, 1]
+	  Position		  [90, 462, 160, 518]
+	  DropShadow		  on
+	  LibraryVersion	  "1.61"
+	  MinAlgLoopOccurrences	  off
+	  PropExecContextOutsideSubsystem off
+	  RTWSystemCode		  "Auto"
+	  FunctionWithSeparateData off
+	  Opaque		  off
+	  RequestExecContextInheritance	off
+	  MaskHideContents	  off
+	  MaskDescription	  "Pose estimation"
+	  MaskHelp		  "Estimate pose of an object based on known 3D points with respect to object\ncoordinate frame, a camera"
+	  " model, and observed object point projections.\n\n<b>Parameters::</b>\n \nCamera (Camera)  The camera object, subcl"
+	  "ass of Camera class\nPoints (3xN)     The 3D world points in object coordinate frame, one per column\n \n<b>Inputs:"
+	  ":</b>\n \nPoints (2xN)  The 2D image-plane points, one per column, corresponding\n              to the columns of P"
+	  "oints.\n \n<b>Outputs::</b>\n \nT (4x4) the estimated object pose as a homogeneous transformation\n \n<b>Notes::</b"
+	  ">\n \n- A wrapper for the Toolbox method estpose()."
+	  MaskPromptString	  "Camera|Points (3xN)"
+	  MaskStyleString	  "edit,edit"
+	  MaskVariables		  "cam=@1;P=@2;"
+	  MaskTunableValueString  "on,on"
+	  MaskCallbackString	  "|"
+	  MaskEnableString	  "on,on"
+	  MaskVisibilityString	  "on,on"
+	  MaskToolTipString	  "on,on"
+	  MaskIconFrame		  on
+	  MaskIconOpaque	  on
+	  MaskIconRotate	  "none"
+	  MaskPortRotate	  "default"
+	  MaskIconUnits		  "autoscale"
+	  MaskValueString	  "0|0"
+	  System {
+	    Name		    "Pose estimation"
+	    Location		    [929, 686, 1198, 826]
+	    Open		    off
+	    ModelBrowserVisibility  off
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "A4"
+	    PaperUnits		    "centimeters"
+	    TiledPaperMargins	    [1.270000, 1.270000, 1.270000, 1.270000]
+	    TiledPageScale	    1
+	    ShowPageBoundaries	    off
+	    ZoomFactor		    "100"
+	    SIDHighWatermark	    "225"
+	    SIDPrevWatermark	    "225"
+	    Block {
+	      BlockType		      Inport
+	      Name		      "p"
+	      SID		      "620:200"
+	      Position		      [25, 33, 55, 47]
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      MATLABFcn
+	      Name		      "MATLAB Fcn"
+	      SID		      "620:198"
+	      Ports		      [1, 1]
+	      Position		      [80, 25, 140, 55]
+	      MATLABFcn		      "cam.estpose(P, u)"
+	      OutputDimensions	      "[4,4]"
+	      Output1D		      off
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "T"
+	      SID		      "620:201"
+	      Position		      [165, 33, 195, 47]
+	      IconDisplay	      "Port number"
+	    }
+	    Line {
+	      SrcBlock		      "MATLAB Fcn"
+	      SrcPort		      1
+	      DstBlock		      "T"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "p"
+	      SrcPort		      1
+	      DstBlock		      "MATLAB Fcn"
+	      DstPort		      1
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "camera"
+	  SID			  "621"
+	  Ports			  [1, 1]
+	  Position		  [95, 106, 175, 184]
+	  BackgroundColor	  "lightBlue"
+	  DropShadow		  on
+	  LibraryVersion	  "1.61"
+	  MinAlgLoopOccurrences	  off
+	  PropExecContextOutsideSubsystem off
+	  RTWSystemCode		  "Auto"
+	  FunctionWithSeparateData off
+	  Opaque		  off
+	  RequestExecContextInheritance	off
+	  MaskHideContents	  off
+	  MaskDescription	  "Camera model"
+	  MaskHelp		  "A generalized camera model that projects a set of world points to the image\nplane.\n\n\n<b>Parameters"
+	  "::</b>\n \nCamera (Camera)  The camera object, subclass of Camera class\nPoints (3xN)     The 3D world points, one "
+	  "per column\n \n<b>Inputs::</b>\n \nT (4x4) the camera pose as a homogeneous transformation\n\n \n<b>Outputs::</b>\n"
+	  " \np (2xN) projection of world points, one per column, corresponding to columns\n        of the parameter Points.\n"
+	  " \n<b>Notes::</b>\n \n- Accepts any camera object derived from the abstract Camera superclass."
+	  MaskPromptString	  "Camera|Points (3xN)"
+	  MaskStyleString	  "edit,edit"
+	  MaskVariables		  "cam=@1;points=@2;"
+	  MaskTunableValueString  "on,on"
+	  MaskCallbackString	  "|"
+	  MaskEnableString	  "on,on"
+	  MaskVisibilityString	  "on,on"
+	  MaskToolTipString	  "on,on"
+	  MaskIconFrame		  on
+	  MaskIconOpaque	  on
+	  MaskIconRotate	  "none"
+	  MaskPortRotate	  "default"
+	  MaskIconUnits		  "autoscale"
+	  MaskValueString	  "|"
+	  System {
+	    Name		    "camera"
+	    Location		    [1833, 1259, 2140, 1365]
+	    Open		    off
+	    ModelBrowserVisibility  off
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "A4"
+	    PaperUnits		    "centimeters"
+	    TiledPaperMargins	    [1.270000, 1.270000, 1.270000, 1.270000]
+	    TiledPageScale	    1
+	    ShowPageBoundaries	    off
+	    ZoomFactor		    "100"
+	    SIDHighWatermark	    "225"
+	    SIDPrevWatermark	    "225"
+	    Block {
+	      BlockType		      Inport
+	      Name		      "T"
+	      SID		      "621:133"
+	      Position		      [25, 33, 55, 47]
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      MATLABFcn
+	      Name		      "MATLAB Fcn"
+	      SID		      "621:134"
+	      Ports		      [1, 1]
+	      Position		      [110, 25, 170, 55]
+	      MATLABFcn		      "cam.plot(points, 'Tcam', u)"
+	      OutputSignalType	      "real"
+	      Output1D		      off
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "p"
+	      SID		      "621:135"
+	      Position		      [230, 33, 260, 47]
+	      IconDisplay	      "Port number"
+	    }
+	    Line {
+	      SrcBlock		      "T"
+	      SrcPort		      1
+	      DstBlock		      "MATLAB Fcn"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "MATLAB Fcn"
+	      SrcPort		      1
+	      DstBlock		      "p"
+	      DstPort		      1
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "camera2"
+	  SID			  "622"
+	  Ports			  [2, 1]
+	  Position		  [245, 105, 330, 185]
+	  BackgroundColor	  "lightBlue"
+	  DropShadow		  on
+	  LibraryVersion	  "1.61"
+	  MinAlgLoopOccurrences	  off
+	  PropExecContextOutsideSubsystem off
+	  RTWSystemCode		  "Auto"
+	  FunctionWithSeparateData off
+	  Opaque		  off
+	  RequestExecContextInheritance	off
+	  MaskHideContents	  off
+	  MaskDescription	  "Camera model for moving object"
+	  MaskHelp		  "A generalized camera model that projects a set of world points to the image\nplane.\n\n\n<b>Parameters"
+	  "::</b>\n \nCamera (Camera)  The camera object, subclass of Camera class\nPoints (3xN)     The 3D world points, one "
+	  "per column, with respect to the\n                 object coordinate frame.\n \n<b>Inputs::</b>\n \nT (4x4)    the c"
+	  "amera pose as a homogeneous transformation\nTobj (4x4) the pose of the object coordinate frame\n \n<b>Outputs::</b>"
+	  "\n \np (2xN) projection of world points, one per column, corresponding to columns\n        of the parameter Points."
+	  "\n \n<b>Notes::</b>\n\n- This block allows for the object to move, as well as the camera.\n- Accepts any camera obj"
+	  "ect derived from the abstract Camera superclass."
+	  MaskPromptString	  "Camera|Points (3xN)"
+	  MaskStyleString	  "edit,edit"
+	  MaskVariables		  "cam=@1;points=@2;"
+	  MaskTunableValueString  "on,on"
+	  MaskCallbackString	  "|"
+	  MaskEnableString	  "on,on"
+	  MaskVisibilityString	  "on,on"
+	  MaskToolTipString	  "on,on"
+	  MaskIconFrame		  on
+	  MaskIconOpaque	  on
+	  MaskIconRotate	  "none"
+	  MaskPortRotate	  "default"
+	  MaskIconUnits		  "autoscale"
+	  MaskValueString	  "0|0"
+	  System {
+	    Name		    "camera2"
+	    Location		    [519, 769, 909, 968]
+	    Open		    off
+	    ModelBrowserVisibility  off
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "A4"
+	    PaperUnits		    "centimeters"
+	    TiledPaperMargins	    [1.270000, 1.270000, 1.270000, 1.270000]
+	    TiledPageScale	    1
+	    ShowPageBoundaries	    off
+	    ZoomFactor		    "100"
+	    SIDHighWatermark	    "257"
+	    SIDPrevWatermark	    "257"
+	    Block {
+	      BlockType		      Inport
+	      Name		      "T"
+	      SID		      "622:623"
+	      Position		      [15, 53, 45, 67]
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "Tobj"
+	      SID		      "622:624"
+	      Position		      [15, 103, 45, 117]
+	      Port		      "2"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      MATLABFcn
+	      Name		      "MATLAB Fcn"
+	      SID		      "622:625"
+	      Ports		      [1, 1]
+	      Position		      [230, 55, 290, 85]
+	      MATLABFcn		      "cam.plot(points, 'Tcam', u(:,:,1), 'Tobj', u(:,:,2), 'drawnow')"
+	      OutputDimensions	      "[2,numcols(points)]"
+	      OutputSignalType	      "real"
+	      Output1D		      off
+	    }
+	    Block {
+	      BlockType		      Concatenate
+	      Name		      "Matrix\nConcatenate"
+	      SID		      "622:626"
+	      Ports		      [2, 1]
+	      Position		      [135, 49, 190, 91]
+	      Mode		      "Multidimensional array"
+	      ConcatenateDimension    "3"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "p"
+	      SID		      "622:627"
+	      Position		      [325, 63, 355, 77]
+	      IconDisplay	      "Port number"
+	    }
+	    Line {
+	      SrcBlock		      "T"
+	      SrcPort		      1
+	      DstBlock		      "Matrix\nConcatenate"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Tobj"
+	      SrcPort		      1
+	      Points		      [70, 0]
+	      DstBlock		      "Matrix\nConcatenate"
+	      DstPort		      2
+	    }
+	    Line {
+	      SrcBlock		      "Matrix\nConcatenate"
+	      SrcPort		      1
+	      DstBlock		      "MATLAB Fcn"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "MATLAB Fcn"
+	      SrcPort		      1
+	      DstBlock		      "p"
+	      DstPort		      1
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "image\nJacobian"
+	  SID			  "628"
+	  Ports			  [1, 1]
+	  Position		  [95, 249, 165, 301]
+	  BackgroundColor	  "lightBlue"
+	  DropShadow		  on
+	  LibraryVersion	  "1.61"
+	  MinAlgLoopOccurrences	  off
+	  PropExecContextOutsideSubsystem off
+	  RTWSystemCode		  "Auto"
+	  FunctionWithSeparateData off
+	  Opaque		  off
+	  RequestExecContextInheritance	off
+	  MaskHideContents	  off
+	  MaskDescription	  "Image Jacobian"
+	  MaskHelp		  "Jacobian matrix relating image plane point velocity to camera spatial\nvelocity expressed in the world"
+	  " frame.\n\n<b>Parameters::</b>\n \nCamera (Camera)  The camera object, subclass of Camera class\nz (1x1)          P"
+	  "oint depth, assumed same for all points\nz (1xN)          Point depth, unique for each point\n\n<b>Inputs::</b>\n\n"
+	  "Points (2xN)     The 2D image-plane points, one per column\n\n \n<b>Outputs::</b>\n \nJ (2Nx6) the image Jacobian m"
+	  "atrix\n \n<b>Notes::</b>\n\n- For multiple points the Jacobian is the \"stack\" of the 2x6 point feature\n  Jacobia"
+	  "ns.\n- A wrapper for the Toolbox method visjac_p().\n"
+	  MaskPromptString	  "Camera|Assumed depth (m)"
+	  MaskStyleString	  "edit,edit"
+	  MaskVariables		  "cam=@1;z=@2;"
+	  MaskTunableValueString  "on,on"
+	  MaskCallbackString	  "|"
+	  MaskEnableString	  "on,on"
+	  MaskVisibilityString	  "on,on"
+	  MaskToolTipString	  "on,on"
+	  MaskIconFrame		  on
+	  MaskIconOpaque	  on
+	  MaskIconRotate	  "none"
+	  MaskPortRotate	  "default"
+	  MaskIconUnits		  "autoscale"
+	  MaskValueString	  "|"
+	  System {
+	    Name		    "image\nJacobian"
+	    Location		    [135, 237, 444, 363]
+	    Open		    off
+	    ModelBrowserVisibility  off
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "A4"
+	    PaperUnits		    "centimeters"
+	    TiledPaperMargins	    [1.270000, 1.270000, 1.270000, 1.270000]
+	    TiledPageScale	    1
+	    ShowPageBoundaries	    off
+	    ZoomFactor		    "100"
+	    SIDHighWatermark	    "225"
+	    SIDPrevWatermark	    "225"
+	    Block {
+	      BlockType		      Inport
+	      Name		      "p"
+	      SID		      "628:137"
+	      Position		      [25, 33, 55, 47]
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      MATLABFcn
+	      Name		      "MATLAB Fcn"
+	      SID		      "628:138"
+	      Ports		      [1, 1]
+	      Position		      [105, 25, 165, 55]
+	      MATLABFcn		      "cam.visjac_p(u, z)"
+	      Output1D		      off
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "J"
+	      SID		      "628:139"
+	      Position		      [210, 33, 240, 47]
+	      IconDisplay	      "Port number"
+	    }
+	    Line {
+	      SrcBlock		      "p"
+	      SrcPort		      1
+	      DstBlock		      "MATLAB Fcn"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "MATLAB Fcn"
+	      SrcPort		      1
+	      DstBlock		      "J"
+	      DstPort		      1
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "invJac"
+	  SID			  "629"
+	  Ports			  [2, 2]
+	  Position		  [95, 360, 135, 420]
+	  BackgroundColor	  "red"
+	  LibraryVersion	  "1.61"
+	  MinAlgLoopOccurrences	  off
+	  PropExecContextOutsideSubsystem off
+	  RTWSystemCode		  "Auto"
+	  FunctionWithSeparateData off
+	  Opaque		  off
+	  RequestExecContextInheritance	off
+	  MaskHideContents	  off
+	  MaskDescription	  "Inverse image Jacobian"
+	  MaskHelp		  "Computes camera velocity based on the inverse image Jacobian and image \nplane error.\n\n\n<b>Inputs::"
+	  "</b>\n \nJ (6x6) the image Jacobian matrix\ne (6x1) the image plane error (du1, dv1, du2, dv2, ...)\n \n<b>Outputs:"
+	  ":</b>\n \nvdot (1x6) the required camera spatial velocity\ncond (1x1) the condition of the image Jacobian\n \n<b>No"
+	  "tes::</b>\n \n- A wrapper for the MATLAB function inv().\n- Only valid for square Jacobians (3 image points)\n"
+	  MaskIconFrame		  on
+	  MaskIconOpaque	  on
+	  MaskIconRotate	  "none"
+	  MaskPortRotate	  "default"
+	  MaskIconUnits		  "autoscale"
+	  System {
+	    Name		    "invJac"
+	    Location		    [1253, 701, 1797, 962]
+	    Open		    off
+	    ModelBrowserVisibility  off
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "A4"
+	    PaperUnits		    "centimeters"
+	    TiledPaperMargins	    [1.270000, 1.270000, 1.270000, 1.270000]
+	    TiledPageScale	    1
+	    ShowPageBoundaries	    off
+	    ZoomFactor		    "100"
+	    SIDHighWatermark	    "271"
+	    SIDPrevWatermark	    "271"
+	    Block {
+	      BlockType		      Inport
+	      Name		      "J"
+	      SID		      "629:630"
+	      Position		      [25, 103, 55, 117]
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "e"
+	      SID		      "629:631"
+	      Position		      [25, 163, 55, 177]
+	      Port		      "2"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      MATLABFcn
+	      Name		      "MATLAB Fcn2"
+	      SID		      "629:632"
+	      Ports		      [1, 1]
+	      Position		      [185, 25, 245, 55]
+	      ShowName		      off
+	      MATLABFcn		      "cond(u)"
+	      Output1D		      off
+	    }
+	    Block {
+	      BlockType		      Product
+	      Name		      "Product1"
+	      SID		      "629:633"
+	      Ports		      [2, 1]
+	      Position		      [240, 95, 275, 155]
+	      BackgroundColor	      "lightBlue"
+	      ShowName		      off
+	      Multiplication	      "Matrix(*)"
+	    }
+	    Block {
+	      BlockType		      MATLABFcn
+	      Name		      "inv"
+	      SID		      "629:634"
+	      Ports		      [1, 1]
+	      Position		      [120, 95, 180, 125]
+	      BackgroundColor	      "lightBlue"
+	      MATLABFcn		      "pinv(u)"
+	      Output1D		      off
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "vdot"
+	      SID		      "629:635"
+	      Position		      [315, 118, 345, 132]
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "cond"
+	      SID		      "629:636"
+	      Position		      [315, 33, 345, 47]
+	      Port		      "2"
+	      IconDisplay	      "Port number"
+	    }
+	    Line {
+	      SrcBlock		      "Product1"
+	      SrcPort		      1
+	      DstBlock		      "vdot"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "MATLAB Fcn2"
+	      SrcPort		      1
+	      DstBlock		      "cond"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "e"
+	      SrcPort		      1
+	      Points		      [140, 0; 0, -30]
+	      DstBlock		      "Product1"
+	      DstPort		      2
+	    }
+	    Line {
+	      SrcBlock		      "inv"
+	      SrcPort		      1
+	      DstBlock		      "Product1"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "J"
+	      SrcPort		      1
+	      Points		      [15, 0]
+	      Branch {
+		DstBlock		"inv"
+		DstPort			1
+	      }
+	      Branch {
+		Points			[0, -70]
+		DstBlock		"MATLAB Fcn2"
+		DstPort			1
+	      }
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "pinvJac"
+	  SID			  "637"
+	  Ports			  [2, 2]
+	  Position		  [175, 360, 215, 420]
+	  BackgroundColor	  "red"
+	  DropShadow		  on
+	  LibraryVersion	  "1.61"
+	  MinAlgLoopOccurrences	  off
+	  PropExecContextOutsideSubsystem off
+	  RTWSystemCode		  "Auto"
+	  FunctionWithSeparateData off
+	  Opaque		  off
+	  RequestExecContextInheritance	off
+	  MaskHideContents	  off
+	  MaskDescription	  "Inverse image Jacobian"
+	  MaskHelp		  "Computes camera velocity based on the pseudo-inverse of the image Jacobian \nand image plane error for"
+	  " more than 3 points.\n\n\n<b>Inputs::</b>\n \nJ (2Nx6) the image Jacobian matrix\ne (2Nx1) the image plane error (d"
+	  "u1, dv1, du2, dv2, ...)\n \n<b>Outputs::</b>\n \nvdot (1x6) the required camera spatial velocity\ncond (1x1) the co"
+	  "ndition of the image Jacobian\n \n<b>Notes::</b>\n \n- A wrapper for the MATLAB function pinv().\n- Valid for non-s"
+	  "quare Jacobians (>=3 image points)\n"
+	  MaskIconFrame		  on
+	  MaskIconOpaque	  on
+	  MaskIconRotate	  "none"
+	  MaskPortRotate	  "default"
+	  MaskIconUnits		  "autoscale"
+	  System {
+	    Name		    "pinvJac"
+	    Location		    [429, 373, 846, 565]
+	    Open		    off
+	    ModelBrowserVisibility  off
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "A4"
+	    PaperUnits		    "centimeters"
+	    TiledPaperMargins	    [1.270000, 1.270000, 1.270000, 1.270000]
+	    TiledPageScale	    1
+	    ShowPageBoundaries	    off
+	    ZoomFactor		    "100"
+	    SIDHighWatermark	    "225"
+	    SIDPrevWatermark	    "225"
+	    Block {
+	      BlockType		      Inport
+	      Name		      "J"
+	      SID		      "637:141"
+	      Position		      [25, 103, 55, 117]
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "e"
+	      SID		      "637:142"
+	      Position		      [25, 163, 55, 177]
+	      Port		      "2"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      MATLABFcn
+	      Name		      "MATLAB Fcn2"
+	      SID		      "637:143"
+	      Ports		      [1, 1]
+	      Position		      [185, 25, 245, 55]
+	      ShowName		      off
+	      MATLABFcn		      "cond(u)"
+	      Output1D		      off
+	    }
+	    Block {
+	      BlockType		      Product
+	      Name		      "Product1"
+	      SID		      "637:144"
+	      Ports		      [2, 1]
+	      Position		      [240, 95, 275, 155]
+	      BackgroundColor	      "lightBlue"
+	      ShowName		      off
+	      Multiplication	      "Matrix(*)"
+	    }
+	    Block {
+	      BlockType		      MATLABFcn
+	      Name		      "pinv"
+	      SID		      "637:638"
+	      Ports		      [1, 1]
+	      Position		      [120, 95, 180, 125]
+	      BackgroundColor	      "lightBlue"
+	      MATLABFcn		      "pinv(u)"
+	      Output1D		      off
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "vdot"
+	      SID		      "637:639"
+	      Position		      [315, 118, 345, 132]
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "cond"
+	      SID		      "637:640"
+	      Position		      [315, 33, 345, 47]
+	      Port		      "2"
+	      IconDisplay	      "Port number"
+	    }
+	    Line {
+	      SrcBlock		      "Product1"
+	      SrcPort		      1
+	      DstBlock		      "vdot"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "MATLAB Fcn2"
+	      SrcPort		      1
+	      DstBlock		      "cond"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "e"
+	      SrcPort		      1
+	      Points		      [140, 0; 0, -30]
+	      DstBlock		      "Product1"
+	      DstPort		      2
+	    }
+	    Line {
+	      SrcBlock		      "pinv"
+	      SrcPort		      1
+	      DstBlock		      "Product1"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "J"
+	      SrcPort		      1
+	      Points		      [15, 0]
+	      Branch {
+		DstBlock		"pinv"
+		DstPort			1
+	      }
+	      Branch {
+		Points			[0, -70]
+		DstBlock		"MATLAB Fcn2"
+		DstPort			1
+	      }
+	    }
+	  }
+	}
+	Annotation {
+	  SID			  "645"
+	  Name			  "\nMachine Vision  \n "
+	  Position		  [72, 32]
+	  BackgroundColor	  "cyan"
+	  FontSize		  18
+	}
+	Annotation {
+	  SID			  "644"
+	  Name			  "Cameras"
+	  Position		  [17, 111]
+	  HorizontalAlignment	  "left"
+	  ForegroundColor	  "orange"
+	}
+	Annotation {
+	  SID			  "643"
+	  Name			  "Image\nJacobian"
+	  Position		  [12, 266]
+	  HorizontalAlignment	  "left"
+	  ForegroundColor	  "orange"
+	}
+	Annotation {
+	  SID			  "642"
+	  Name			  "Pose\nestimation"
+	  Position		  [12, 476]
+	  HorizontalAlignment	  "left"
+	  ForegroundColor	  "orange"
+	}
+	Annotation {
+	  SID			  "641"
+	  Name			  "Machine Vision Toolbox for MATLAB"
+	  Position		  [151, 17]
+	  HorizontalAlignment	  "left"
+	  FontSize		  12
+	  FontWeight		  "bold"
+	}
+      }
+    }
+    Annotation {
+      SID		      "648"
+      Name		      "Robotics Toolbox for MATLAB\n(release 9)"
+      Position		      [21, 22]
+      HorizontalAlignment     "left"
+      FontSize		      12
+      FontWeight	      "bold"
+    }
+    Annotation {
+      SID		      "647"
+      Name		      "Machine Vision Toolbox for Matlab\n(release 3)"
+      Position		      [21, 277]
+      HorizontalAlignment     "left"
+      FontSize		      12
+      FontWeight	      "bold"
+    }
+    Annotation {
+      SID		      "646"
+      Name		      "Copyright (c) 2002-2011 Peter Corke"
+      Position		      [190, 395]
+    }
+  }
+}
