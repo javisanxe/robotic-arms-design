@@ -1,0 +1,95 @@
+------------------------------------------------------------------------
+r912 | peter.i.corke@gmail.com | 2012-09-24 10:13:17 +1000 (Mon, 24 Sep 2012) | 1 line
+Changed paths:
+   M /matlab/robot/trunk/unit_test/TransformationsTest.m
+   M /matlab/robot/trunk/unit_test/UtilityTest.m
+
+Added tests for trprint, and tr2angvec (which it calls) for the zero rotation case.
+------------------------------------------------------------------------
+r911 | peter.i.corke@gmail.com | 2012-09-24 10:12:32 +1000 (Mon, 24 Sep 2012) | 1 line
+Changed paths:
+   D /matlab/robot/trunk/simulink/sl_bicycle.mdl
+   M /matlab/robot/trunk/unit_test/SimulinkTest.m
+
+Remove this model, it's just the Roblocks block with connectors.
+------------------------------------------------------------------------
+r909 | peter.i.corke@gmail.com | 2012-09-23 19:12:58 +1000 (Sun, 23 Sep 2012) | 1 line
+Changed paths:
+   M /matlab/robot/trunk/simulink/sl_quadcopter.mdl
+
+Tidy up wires on diagram
+------------------------------------------------------------------------
+r907 | peter.i.corke@gmail.com | 2012-09-23 12:24:55 +1000 (Sun, 23 Sep 2012) | 1 line
+Changed paths:
+   M /matlab/robot/trunk/tr2angvec.m
+
+Handle the case for a zero rotation, ie. unit matrix
+------------------------------------------------------------------------
+r902 | peter.i.corke@gmail.com | 2012-09-23 11:20:33 +1000 (Sun, 23 Sep 2012) | 2 lines
+Changed paths:
+   A /matlab/robot/trunk/se3.m
+
+convert SE(2) to SE(3)
+
+------------------------------------------------------------------------
+r859 | peter.i.corke@gmail.com | 2012-09-22 18:07:04 +1000 (Sat, 22 Sep 2012) | 1 line
+Changed paths:
+   M /matlab/robot/trunk/doc/robot.tex
+
+File format is now zip only
+------------------------------------------------------------------------
+r858 | peter.i.corke@gmail.com | 2012-09-22 18:06:40 +1000 (Sat, 22 Sep 2012) | 1 line
+Changed paths:
+   M /matlab/robot/trunk/distrib/Makefile
+
+Build version number into zip file name
+------------------------------------------------------------------------
+r857 | peter.i.corke@gmail.com | 2012-09-22 18:06:22 +1000 (Sat, 22 Sep 2012) | 1 line
+Changed paths:
+   M /matlab/robot/trunk/distrib/allfuncs.txt
+
+Added some missing common functions like xaxis, yaxis...
+------------------------------------------------------------------------
+r856 | peter.i.corke@gmail.com | 2012-09-22 18:05:18 +1000 (Sat, 22 Sep 2012) | 1 line
+Changed paths:
+   M /matlab/robot/trunk/ishomog.m
+   M /matlab/robot/trunk/isrot.m
+
+doco update
+------------------------------------------------------------------------
+r855 | peter.i.corke@gmail.com | 2012-09-22 18:01:24 +1000 (Sat, 22 Sep 2012) | 1 line
+Changed paths:
+   M /matlab/robot/trunk/@SerialLink/plot.m
+   M /matlab/robot/trunk/tranimate.m
+
+Add 'movie' option which saves successive frames as image files in the specified directory.  Then use some offline tool (eg. ffmpeg) to build a movie
+------------------------------------------------------------------------
+r854 | peter.i.corke@gmail.com | 2012-09-22 17:59:57 +1000 (Sat, 22 Sep 2012) | 1 line
+Changed paths:
+   M /matlab/robot/trunk/trplot.m
+
+Remove debug
+------------------------------------------------------------------------
+r853 | peter.i.corke@gmail.com | 2012-09-22 17:59:23 +1000 (Sat, 22 Sep 2012) | 1 line
+Changed paths:
+   M /matlab/robot/trunk/Navigation.m
+
+Add a command that helps under Windows, not needed on Mac
+------------------------------------------------------------------------
+r852 | peter.i.corke@gmail.com | 2012-09-13 21:12:32 +1000 (Thu, 13 Sep 2012) | 3 lines
+Changed paths:
+   M /matlab/robot/trunk/simulink/roblocks.mdl
+   M /matlab/robot/trunk/simulink/slplotbot.m
+
+Add support for multiple robots in the one plot from Simulink.
+There is now a hold checkbox in the mask for the Plot block.
+
+------------------------------------------------------------------------
+r851 | peter.i.corke@gmail.com | 2012-07-31 18:44:02 +1000 (Tue, 31 Jul 2012) | 3 lines
+Changed paths:
+   M /matlab/robot/trunk/@SerialLink/ikine.m
+
+Do not remove tool and base transform, since these are added by fkine, and we compare
+fkine output with the transform to solve for.
+
+------------------------------------------------------------------------
